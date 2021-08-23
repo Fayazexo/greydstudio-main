@@ -28,7 +28,7 @@ export default () => (
                   </div>
                   <ul className='list-home'>
                     <li>Home Designs Interior</li>
-                    <li>Modular Kitchen Designs</li>
+                    <li>Modular RannaGhor er Designs</li>
                     <li>Wardrobe Design Interior</li>
                     <li>Space Saving Furniture</li>
                   </ul>
