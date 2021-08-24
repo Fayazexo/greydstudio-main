@@ -256,6 +256,21 @@ section {
     display: none;
   }
 }
+.navLinks {
+  position: fixed;
+  top: 28px;
+  right: 30px;
+  z-index: 99;
+  .links {
+    position: relative;
+    top: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: $white;
+    padding-left: 30px;
+    margin-left: 20px;
+  }
+}
 .mainBtn {
   font-size: 1.8rem;
   font-weight: 600;

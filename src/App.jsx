@@ -28,17 +28,13 @@ function App() {
     .then(response => response.json())
     .then(data => {
       const status = data[0].status
-      if(status){
-        setLoading(false)
-      } else {
-        setLoading(true);
-      }
+      {status ? setLoading(false) : setLoading(true)}
     })
   }, [loading]);
   
   return (
     <Router>
-      {loading ? (
+      {!loading ? (
         <Preloader />
       ) : (
         <div className="App">

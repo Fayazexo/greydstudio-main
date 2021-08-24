@@ -1,14 +1,8 @@
-import React, { useState, useEffect } from "react";
-import {
-  Wrapper,
-  Container,
-  Body,
-  Page,
-  LinkTag,
-  SocialContainer,
-  Overlaybg
-} from "../styles/Navigation.styles";
+import React, { useEffect, useState } from "react";
 import { withRouter } from "react-router";
+import {
+  Body, Container, LinkTag, Overlaybg, Page, SocialContainer, Wrapper
+} from "../styles/Navigation.styles";
 import NavButton from "./NavButton";
 
 const NavigationMenu = ({ history, hasBackground, setBackground }) => {
@@ -92,15 +86,40 @@ const NavigationMenu = ({ history, hasBackground, setBackground }) => {
   return (
     <header>
       <div id='header'></div>
-      <div className='logo'>
-        <img
-          src="./img/logowhite.png"
-          className="img-fluid"
-          alt="#"
-        />
-        <span className='callus'>
-          Call Us: (+6221) 000 888 999
-        </span>
+      <div className='navBar'>
+        <div className='logo'>
+          <img
+            src={"./img/logowhite.png"}
+            className="img-fluid"
+            alt="#"
+          />
+          <span className='callus'>
+            Call Us: +880 19 8935 9890
+          </span>
+        </div>
+        <div className='navLinks'>
+          <span className='links'>
+            Home
+          </span>
+          <span className='links'>
+            About
+          </span>
+          <span className='links'>
+            Project
+          </span>
+          <span className='links'>
+            Events
+          </span>
+          <span className='links'>
+            Our Teams
+          </span>
+          <span className='links'>
+            Land Owners
+          </span>
+          <span className='links'>
+            Contact Us
+          </span>
+        </div>
       </div>
       <Wrapper open={isOn} shouldAnimate={shouldAnimate}>
         <Overlaybg open={isOn} shouldAnimate={shouldAnimate} onClick={closeHandler}/>
