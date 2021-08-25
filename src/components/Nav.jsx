@@ -82,7 +82,7 @@ const NavigationMenu = ({ history, hasBackground, setBackground }) => {
       window.removeEventListener("scroll", scrollCallBack);
     };
     }, []);
-
+  
   return (
     <header>
       <div id='header'></div>

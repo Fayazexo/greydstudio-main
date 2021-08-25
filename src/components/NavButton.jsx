@@ -41,6 +41,11 @@ const BaseCircle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  transition: all 0.3s ease-in-out;
+  @media screen and (min-width: 1344px) {
+    display: none;
+    transition: all 0.3s ease-in-out;
+  }
 `;
 
 const Circle = styled(BaseCircle)`
