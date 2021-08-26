@@ -17,7 +17,7 @@ import "./styles/animated-on3step.css"
 import "./styles/main.scss"
 
 function App() {
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
   const [navBackground, setNavBack] = useState(false)
 
   useEffect(() => {
