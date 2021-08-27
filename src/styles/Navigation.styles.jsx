@@ -1,14 +1,14 @@
-import styled, { css } from "styled-components";
-import theme from "./theme";
+import styled, { css } from "styled-components"
 import {
-  openSpan,
+  closeNavigation,
+  disappear,
   loadImage,
   openNavigation,
   openNavigationM,
-  closeNavigation,
-  disappear
-} from "../animation/keyframes";
-import { Bar1, Bar2, Bar3 } from "../components/NavButton";
+  openSpan,
+} from "../animation/keyframes"
+import { Bar1, Bar2, Bar3 } from "../components/NavButton"
+import theme from "./theme"
 
 export const Wrapper = styled.div`
   z-index: 999;
@@ -18,23 +18,23 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   transition: all 0.3s ease;
-  box-shadow: 0 0 65px rgba(0, 0, 0, .07);
+  box-shadow: 0 0 65px rgba(0, 0, 0, 0.07);
   opacity: 1;
 
   ${({ open, shouldAnimate, hasBackground }) =>
     !shouldAnimate
       ? css`
           &:hover {
-            
           }
         `
       : open
       ? css`
-          animation: ${openNavigation(hasBackground)} 0.3s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0s 1
-            normal forwards;
+          animation: ${openNavigation(hasBackground)} 0.3s
+            cubic-bezier(0.215, 0.61, 0.355, 1) 0s 1 normal forwards;
           @media (max-width: 419px) {
-            animation: ${openNavigationM(hasBackground)} 0.3s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0s 1 normal forwards;
-          } 
+            animation: ${openNavigationM(hasBackground)} 0.3s
+              cubic-bezier(0.215, 0.61, 0.355, 1) 0s 1 normal forwards;
+          }
         `
       : css`
             right: 30px;
@@ -45,26 +45,27 @@ export const Wrapper = styled.div`
             background-color: ${theme.colors.white}
             animation: ${closeNavigation} 0.4s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.3s 1 normal forwards;      
           `}
-`;
+`
 
 export const Overlaybg = styled.div`
   display: block;
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(0,0,0,0);
+  background: rgba(0, 0, 0, 0);
   z-index: 1;
   ${({ open, shouldAnimate }) =>
     open
       ? css`
-          width: 100vw; height: 100vh;
+          width: 100vw;
+          height: 100vh;
         `
       : css`
           ${shouldAnimate && `display: block;`}
           animation: ${disappear} 0.3s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0s 1 normal;
           animation-fill-mode: forwards;
         `}
-`;
+`
 
 export const Body = styled.div`
   opacity: 0;
@@ -74,42 +75,42 @@ export const Body = styled.div`
     open
       ? css`
           display: block;
-          animation: ${loadImage} 0.3s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s 1 normal forwards;
+          animation: ${loadImage} 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s
+            1 normal forwards;
         `
       : css`
           ${shouldAnimate && `display: block;`}
         `}
-      position: relative;
-      text-align: left;
-      margin-left: 10%;
-      transition: width 0.2s;
-`;
+  position: relative;
+  text-align: left;
+  margin-left: 10%;
+  transition: width 0.2s;
+`
 
 export const Page = styled.div`
-
   &:hover {
     color: maincolor;
     cursor: pointer;
 
     > a {
       cursor: pointer;
-      opacity: .8;
+      opacity: 0.8;
     }
-
   }
-`;
+`
 
 export const LinkTag = styled.a`
   display: block;
   opacity: 1;
   text-decoration: none;
-  transition: color 0.1s cubic-bezier(0.215, 0.610, 0.355, 1.000), opacity 0.1s cubic-bezier(0.215, 0.610, 0.355, 1.000),
-  transform 0.1s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition: color 0.1s cubic-bezier(0.215, 0.61, 0.355, 1),
+    opacity 0.1s cubic-bezier(0.215, 0.61, 0.355, 1),
+    transform 0.1s cubic-bezier(0.215, 0.61, 0.355, 1);
   &:hover {
     text-decoration: none;
     cursor: pointer;
   }
-`;
+`
 
 export const Spanner = styled.span`
   height: 200%;
@@ -117,16 +118,17 @@ export const Spanner = styled.span`
   position: fixed;
   top: -50vh;
   left: -50vw;
-  transition: width 0.4s cubic-bezier(0.215, 0.610, 0.355, 1.000), height 0.4s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition: width 0.4s cubic-bezier(0.215, 0.61, 0.355, 1),
+    height 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
 
   ${({ opening }) =>
     opening &&
     css`
       min-width: 100%;
       z-index: 8;
-      animation: ${openSpan} 0.6s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+      animation: ${openSpan} 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
     `}
-`;
+`
 
 export const SocialContainer = styled.div`
   list-style: none;
@@ -137,18 +139,20 @@ export const SocialContainer = styled.div`
     open
       ? css`
           display: block;
-          animation: ${loadImage} 0.3s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s 1 normal forwards;
+          animation: ${loadImage} 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s
+            1 normal forwards;
         `
       : css`
           display: none;
         `}
-`;
-
+`
 
 export const Container = styled.div`
   position: absolute;
-  transition: height 0.1s cubic-bezier(0.215, 0.610, 0.355, 1.000), background-color 0.1s cubic-bezier(0.215, 0.610, 0.355, 1.000), border-radius 0.1s cubic-bezier(0.215, 0.610, 0.355, 1.000);
-  
+  transition: height 0.1s cubic-bezier(0.215, 0.61, 0.355, 1),
+    background-color 0.1s cubic-bezier(0.215, 0.61, 0.355, 1),
+    border-radius 0.1s cubic-bezier(0.215, 0.61, 0.355, 1);
+
   ${({ open, hasBackground }) =>
     !open
       ? `
@@ -172,4 +176,4 @@ export const Container = styled.div`
       width: 100% !important;
     }
   }
-`;
+`

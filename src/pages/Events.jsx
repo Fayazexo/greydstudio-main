@@ -1,14 +1,11 @@
-import React, { useState, useEffect } from "react"
-import { withRouter } from "react-router-dom"
+import React, { useEffect, useState } from "react"
 import Reveal from "react-reveal/Reveal"
-
+import { withRouter } from "react-router-dom"
+import Footer from "../components/Footer"
+import { Efect, Efect1, Efect2 } from "../styles/effect.styles"
 import { LinkWrap, Overlay } from "../styles/Work.styles"
 
-import Footer from "../components/Footer"
-
-import { Efect, Efect1, Efect2 } from "../styles/effect.styles"
-
-const News = ({ history }) => {
+const Events = ({ history }) => {
   const [toCase, setCase] = useState("")
   const [coord, setCoords] = useState()
 
@@ -295,4 +292,4 @@ const News = ({ history }) => {
   )
 }
 
-export default withRouter(News)
+export default withRouter(Events)

@@ -10,8 +10,8 @@ const theme = {
     darkGreen: "#2d4739",
     white: "#FFFFFF",
     black: "#090707",
-    maincolor: "#89bc19"
-  }
-};
+    maincolor: "#89bc19",
+  },
+}
 
-export default theme;
+export default theme

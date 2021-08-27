@@ -1,11 +1,10 @@
-import styled, { css } from "styled-components";
-import { workToCase } from "../animation/keyframes";
-
+import styled, { css } from "styled-components"
+import { workToCase } from "../animation/keyframes"
 
 export const LinkWrap = styled.a`
-  &::before{
+  &::before {
     display: block;
-    content: '';
+    content: "";
     ${({ active }) =>
       active &&
       css`
@@ -21,9 +20,9 @@ export const LinkWrap = styled.a`
       `}
   }
   &:hover {
-      cursor: pointer;
-    }
-`;
+    cursor: pointer;
+  }
+`
 
 export const Overlay = styled.div`
   width: 100%;
@@ -32,7 +31,4 @@ export const Overlay = styled.div`
   background-color: rgba(0, 0, 0, 0.4);
   position: relative;
   transition: background-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  
-`;
-
-
+`

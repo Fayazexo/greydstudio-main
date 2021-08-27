@@ -10,9 +10,11 @@ import Case1 from "./pages/detailCase1"
 import Case2 from "./pages/detailCase2"
 import Case3 from "./pages/detailCase3"
 import Newsdetail from "./pages/detailNews"
+import Events from "./pages/Events"
 import Home from "./pages/Home"
-import News from "./pages/News"
-import Work from "./pages/works"
+import LandOwners from "./pages/LandOwners"
+import Projects from "./pages/Projects"
+import Teams from "./pages/Teams"
 import "./styles/animated-on3step.css"
 import "./styles/main.scss"
 
@@ -51,8 +53,10 @@ function App() {
           />
           <Route path="/" exact component={Home} />
           <Route path="/About" exact component={About} />
-          <Route path="/Work" exact component={Work} />
-          <Route path="/News" exact component={News} />
+          <Route path="/Projects" exact component={Projects} />
+          <Route path="/Events" exact component={Events} />
+          <Route path="/Teams" exact component={Teams} />
+          <Route path="/LandOwners" exact component={LandOwners} />
           <Route path="/Contact" exact component={Contact} />
           <Route
             path="/detailcase"

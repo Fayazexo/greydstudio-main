@@ -1,170 +1,226 @@
-import React, { useEffect, useState } from "react";
-import { withRouter } from "react-router";
+import React, { useEffect, useState } from "react"
+import { withRouter } from "react-router"
 import {
-  Body, Container, LinkTag, Overlaybg, Page, SocialContainer, Wrapper
-} from "../styles/Navigation.styles";
-import NavButton from "./NavButton";
+  Body,
+  Container,
+  LinkTag,
+  Overlaybg,
+  Page,
+  SocialContainer,
+  Wrapper,
+} from "../styles/Navigation.styles"
+import NavButton from "./NavButton"
 
 const NavigationMenu = ({ history, hasBackground, setBackground }) => {
-  const [isOn, setState] = useState(false);
-  const [shouldAnimate, setShouldAnimate] = useState(false);
-  const [linking, setLink] = useState("");
+  const [isOn, setState] = useState(false)
+  const [shouldAnimate, setShouldAnimate] = useState(false)
+  const [linking, setLink] = useState("")
 
   useEffect(() => {
     !!linking &&
       setTimeout(() => {
         switch (linking) {
           case "home":
-            history.push("/");
-            setState(false);
-            setLink("");
-            break;
+            history.push("/")
+            setState(false)
+            setLink("")
+            break
           case "about":
-            history.push("/about");
-            setState(false);
-            setLink("");
-            break;
-          case "work":
-            history.push("/work");
-            setState(false);
-            setLink("");
-            break;
-          case "news":
-            history.push("/news");
-            setState(false);
-            setLink("");
-            break;
+            history.push("/about")
+            setState(false)
+            setLink("")
+            break
+          case "projects":
+            history.push("/projects")
+            setState(false)
+            setLink("")
+            break
+          case "events":
+            history.push("/events")
+            setState(false)
+            setLink("")
+            break
+          case "teams":
+            history.push("/teams")
+            setState(false)
+            setLink("")
+            break
+          case "landowners":
+            history.push("/landowners")
+            setState(false)
+            setLink("")
+            break
           case "contact":
-            history.push("/contact");
-            setState(false);
-            setLink("");
-            break;
+            history.push("/contact")
+            setState(false)
+            setLink("")
+            break
           default:
-            setLink("");
+            setLink("")
         }
-        setBackground(false);
-        window.scrollTo(0, 0);
-      }, 0);
-  }, [linking, history, setBackground]);
+        setBackground(false)
+        window.scrollTo(0, 0)
+      }, 0)
+  }, [linking, history, setBackground])
 
   useEffect(() => {
     shouldAnimate &&
       !isOn &&
       setTimeout(() => {
-        setShouldAnimate(false);
-      }, 0);
-  }, [shouldAnimate, isOn]);
+        setShouldAnimate(false)
+      }, 0)
+  }, [shouldAnimate, isOn])
 
   const closeHandler = () => {
-    setShouldAnimate(true);
-    setState(!isOn);
-  };
+    setShouldAnimate(true)
+    setState(!isOn)
+  }
 
-  const setLinkHandler = text => {
-    setShouldAnimate(true);
-    setLink(text);
-  };
+  const setLinkHandler = (text) => {
+    setShouldAnimate(true)
+    setLink(text)
+  }
 
   useEffect(() => {
-    const header = document.getElementById("header");
+    const header = document.getElementById("header")
     const totop = document.getElementById("scroll-to-top")
-    const sticky = header.offsetTop;
+    const sticky = header.offsetTop
     const scrollCallBack = window.addEventListener("scroll", () => {
-    if (window.pageYOffset > sticky + 0) {
-      header.classList.add("sticky");
-      totop.classList.add("show");
-    } else {
-      header.classList.remove("sticky");
-      totop.classList.remove("show");
-    } 
-    });
+      if (window.pageYOffset > sticky + 0) {
+        header.classList.add("sticky")
+        totop.classList.add("show")
+      } else {
+        header.classList.remove("sticky")
+        totop.classList.remove("show")
+      }
+    })
     return () => {
-      window.removeEventListener("scroll", scrollCallBack);
-    };
-    }, []);
-  
+      window.removeEventListener("scroll", scrollCallBack)
+    }
+  }, [])
+
   return (
     <header>
-      <div id='header'></div>
-      <div className='navBar'>
-        <div className='logo'>
-          <img
-            src={"./img/logowhite.png"}
-            className="img-fluid"
-            alt="#"
-          />
-          <span className='callus'>
-            Call Us: +880 19 8935 9890
-          </span>
+      <div id="header"></div>
+      <div className="navBar">
+        <div className="logo">
+          <img src={"./img/logowhite.png"} className="img-fluid" alt="#" />
+          <span className="callus">Call Us: +880 19 8935 9890</span>
         </div>
-        <div className='navLinks'>
-          <span className='links'>
+        <div className="navLinks">
+          <span onClick={() => setLinkHandler("home")} className="links">
             Home
           </span>
-          <span className='links'>
+          <span onClick={() => setLinkHandler("about")} className="links">
             About
           </span>
-          <span className='links'>
+          <span onClick={() => setLinkHandler("projects")} className="links">
             Project
           </span>
-          <span className='links'>
+          <span onClick={() => setLinkHandler("events")} className="links">
             Events
           </span>
-          <span className='links'>
+          <span onClick={() => setLinkHandler("teams")} className="links">
             Our Teams
           </span>
-          <span className='links'>
+          <span onClick={() => setLinkHandler("landowners")} className="links">
             Land Owners
           </span>
-          <span className='links'>
+          <span onClick={() => setLinkHandler("contact")} className="links">
             Contact Us
           </span>
         </div>
       </div>
       <Wrapper open={isOn} shouldAnimate={shouldAnimate}>
-        <Overlaybg open={isOn} shouldAnimate={shouldAnimate} onClick={closeHandler}/>
+        <Overlaybg
+          open={isOn}
+          shouldAnimate={shouldAnimate}
+          onClick={closeHandler}
+        />
         <Container
           open={isOn}
           onClick={closeHandler}
-          hasBackground={hasBackground}>
+          hasBackground={hasBackground}
+        >
           <NavButton open={isOn} />
         </Container>
-        <Body className='midwrpr' open={isOn} shouldAnimate={shouldAnimate}>
-          <div className='conPage'>
-              <Page className='mainBtn' variant="home" onClick={() => setLinkHandler("home")}>
-                  <LinkTag>Home</LinkTag>
-              </Page>
-              <Page className='mainBtn' variant="about" onClick={() => setLinkHandler("about")}>
-                  <LinkTag>About</LinkTag>
-              </Page>
-              <Page className='mainBtn' variant="work" onClick={() => setLinkHandler("work")}>
-                  <LinkTag>Projects</LinkTag>
-              </Page>
-              <Page className='mainBtn' variant="about" onClick={() => setLinkHandler("news")}>
-                  <LinkTag>News</LinkTag>
-              </Page>
-              <Page className='mainBtn' variant="about" onClick={() => setLinkHandler("contact")}>
-                  <LinkTag>Contact</LinkTag>
-              </Page>
+        <Body className="midwrpr" open={isOn} shouldAnimate={shouldAnimate}>
+          <div className="conPage">
+            <Page
+              className="mainBtn"
+              variant="home"
+              onClick={() => setLinkHandler("home")}
+            >
+              <LinkTag>Home</LinkTag>
+            </Page>
+            <Page
+              className="mainBtn"
+              variant="about"
+              onClick={() => setLinkHandler("about")}
+            >
+              <LinkTag>About</LinkTag>
+            </Page>
+            <Page
+              className="mainBtn"
+              variant="work"
+              onClick={() => setLinkHandler("projects")}
+            >
+              <LinkTag>Projects</LinkTag>
+            </Page>
+            <Page
+              className="mainBtn"
+              variant="about"
+              onClick={() => setLinkHandler("events")}
+            >
+              <LinkTag>Events</LinkTag>
+            </Page>
+            <Page
+              className="mainBtn"
+              variant="about"
+              onClick={() => setLinkHandler("teams")}
+            >
+              <LinkTag>Our Teams</LinkTag>
+            </Page>
+            <Page
+              className="mainBtn"
+              variant="about"
+              onClick={() => setLinkHandler("landowners")}
+            >
+              <LinkTag>Land Owners</LinkTag>
+            </Page>
+            <Page
+              className="mainBtn"
+              variant="about"
+              onClick={() => setLinkHandler("contact")}
+            >
+              <LinkTag>Contact</LinkTag>
+            </Page>
           </div>
 
-          <div className='info'>
+          <div className="info">
             <span>(+6221) 000 888 999</span>
-            <span className='link'>support@homekins.com</span>
+            <span className="link">support@homekins.com</span>
             <span>129 Park street, New York 10903</span>
           </div>
-
         </Body>
-        <SocialContainer className='soc-icon' open={isOn}>
-            <span>Follow us:</span>
-            <span className='socicon'><i className="fa fa-facebook-f"></i></span>
-            <span className='socicon'><i className="fa fa-linkedin"></i></span>
-            <span className='socicon'><i className="fa fa-twitter"></i></span>
-            <span className='socicon'><i className="fa  fa-instagram"></i></span>
+        <SocialContainer className="soc-icon" open={isOn}>
+          <span>Follow us:</span>
+          <span className="socicon">
+            <i className="fa fa-facebook-f"></i>
+          </span>
+          <span className="socicon">
+            <i className="fa fa-linkedin"></i>
+          </span>
+          <span className="socicon">
+            <i className="fa fa-twitter"></i>
+          </span>
+          <span className="socicon">
+            <i className="fa  fa-instagram"></i>
+          </span>
         </SocialContainer>
       </Wrapper>
     </header>
-  );
-};
+  )
+}
 
-export default withRouter(NavigationMenu);
+export default withRouter(NavigationMenu)
