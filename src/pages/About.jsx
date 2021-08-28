@@ -1,106 +1,126 @@
 import React from "react"
 import Reveal from "react-reveal/Reveal"
 import { withRouter } from "react-router-dom"
+import Accomplish from "../components/Accomplish"
+import Carouselfeature from "../components/Carouselfeature"
 import Footer from "../components/Footer"
 import { Efect, Efect1, Efect2 } from "../styles/effect.styles"
 
-const About = ({ history }) => {
-  return (
-    <div>
-      <Efect />
-      <Efect1 />
-      <Efect2 />
+const About = ({ history }) => (
+  <div>
+    <Efect />
+    <Efect1 />
+    <Efect2 />
 
-      <div className="jumbotron head" />
+    <div className="jumbotron head" />
 
-      {/* <Reveal effect="fadeIn">
-        <section className="jumbotron imgtop">
-          <img src="./img/imgabout.jpg" className="img-fluid" alt="#" />
-        </section>
-      </Reveal> */}
+    {/* <Reveal effect="fadeIn">
+          <section className="jumbotron imgtop">
+            <img src="./img/imgabout.jpg" className="img-fluid" alt="#" />
+          </section>
+        </Reveal> */}
 
-      <Reveal effect="fadeIn">
-        <section className="container-fluid pb-0">
-          <div className="row m-2-hor">
-            <div className="col-md-4">
-              <h1>About Interior Designs</h1>
-            </div>
-            <div className="col-md-8">
-              <div className="content">
-                Grey.D'Studio is an architectural consultancy & development
-                agency that started its expedition back in 2013 and gained
-                market popularity, retrieving its fame in 2017. On the journey,
-                we accomplished several projects and construction throughout the
-                country. The Grey.D'Studio team provides a bunch of skilled and
-                experienced people who have their hands on devising creative
-                interior design solutions.
-              </div>
-              <div className="content">
-                From the balcony to the interiors of your dream room, we the
-                Grey.D'Studio will provide you with the most preferable and
-                desired architectural consultancy. Over the years we are truly
-                gratified to attain the credence and love of our clients.
-              </div>
-            </div>
-          </div>
-        </section>
-      </Reveal>
-
-      {/* <Reveal effect="fadeInUp">
-        <Abouthome />
-      </Reveal> */}
-
-      {/* <section className="container-fluid bggray mt-5 pb-0">
+    <Reveal effect="fadeInUp">
+      <section className="container-fluid">
         <div className="row m-2-hor">
           <div className="col-12">
-            <Carouselclient />
+            <div className="heading">Our Expertnesses</div>
           </div>
-        </div>
-      </section> */}
-
-      {/* <section className="container-fluid bggray">
-        <div className="row m-2-hor">
           <div className="col-12">
-            <Carouselclientb />
+            <Carouselfeature />
           </div>
         </div>
-      </section> */}
+      </section>
+    </Reveal>
 
-      {/* <Reveal effect="fadeInUp">
-        <section className="container-fluid">
+    <Reveal effect="fadeIn">
+      <section className="container-fluid pb-2">
+        <div className="row m-2-hor">
+          <div className="col-md-4">
+            <h1>About </h1>
+            <h1>
+              Grey.<span className="color">D'</span>Studio
+            </h1>
+          </div>
+          <div className="col-md-8">
+            <div className="content">
+              Grey.D'Studio is an architectural consultancy & development agency
+              that started its expedition back in 2013 and gained market
+              popularity, retrieving its fame in 2017. On the journey, we
+              accomplished several projects and construction throughout the
+              country. The Grey.D'Studio team provides a bunch of skilled and
+              experienced people who have their hands on devising creative
+              interior design solutions.
+            </div>
+            <div className="content">
+              From the balcony to the interiors of your dream room, we the
+              Grey.D'Studio will provide you with the most preferable and
+              desired architectural consultancy. Over the years we are truly
+              gratified to attain the credence and love of our clients.
+            </div>
+          </div>
+        </div>
+      </section>
+    </Reveal>
+
+    <Reveal effect="fadeInUp">
+      <Accomplish />
+    </Reveal>
+
+    {/* <Reveal effect="fadeInUp">
+          <Abouthome />
+        </Reveal> */}
+
+    {/* <section className="container-fluid bggray mt-5 pb-0">
           <div className="row m-2-hor">
             <div className="col-12">
-              <div className="heading">Our Team</div>
-            </div>
-            <div className="col-12">
-              <Carouselteam />
+              <Carouselclient />
             </div>
           </div>
-        </section>
-      </Reveal> */}
+        </section> */}
 
-      {/* <Reveal effect="fadeInUp">
-        <Accomplish />
-      </Reveal> */}
-
-      {/* <Reveal effect="fadeInUp">
-        <section className="container-fluid py-0">
+    {/* <section className="container-fluid bggray">
           <div className="row m-2-hor">
             <div className="col-12">
-              <div className="heading">Our Projects</div>
+              <Carouselclientb />
             </div>
           </div>
-          <div className="row">
-            <div className="col-12 p-0">
-              <Carouselprojects />
-            </div>
-          </div>
-        </section>
-      </Reveal> */}
+        </section> */}
 
-      <Footer />
-    </div>
-  )
-}
+    {/* <Reveal effect="fadeInUp">
+          <section className="container-fluid">
+            <div className="row m-2-hor">
+              <div className="col-12">
+                <div className="heading">Our Team</div>
+              </div>
+              <div className="col-12">
+                <Carouselteam />
+              </div>
+            </div>
+          </section>
+        </Reveal> */}
+
+    {/* <Reveal effect="fadeInUp">
+          <Accomplish />
+        </Reveal> */}
+
+    {/* <Reveal effect="fadeInUp">
+          <section className="container-fluid py-0">
+            <div className="row m-2-hor">
+              <div className="col-12">
+                <div className="heading">Our Projects</div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-12 p-0">
+                <Carouselprojects />
+              </div>
+            </div>
+          </section>
+        </Reveal> */}
+
+    <Footer />
+  </div>
+)
 
 export default withRouter(About)

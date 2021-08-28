@@ -33,7 +33,7 @@ export default class Responsive extends Component {
         {
           breakpoint: 1600,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 4,
             slidesToScroll: 1,
             infinite: false,
             dots: false,
@@ -41,6 +41,15 @@ export default class Responsive extends Component {
         },
         {
           breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: false,
+            dots: false,
+          },
+        },
+        {
+          breakpoint: 1300,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 1,
@@ -78,6 +87,9 @@ export default class Responsive extends Component {
             </div>
             <div className="desc">
               <div className="name">Interior</div>
+              <div className="title">
+                <span className="color">Co-Founder</span>
+              </div>
               <div className="content">
                 Make the most of compact spaces with space saving furniture that
                 are ingenuous and innovative. Transform your living spaces with
@@ -96,6 +108,9 @@ export default class Responsive extends Component {
             </div>
             <div className="desc">
               <div className="name">Architecture</div>
+              <div className="title">
+                <span className="color">Co-Founder</span>
+              </div>
               <div className="content">
                 Make the most of compact spaces with space saving furniture that
                 are ingenuous and innovative. Transform your living spaces with
@@ -114,6 +129,9 @@ export default class Responsive extends Component {
             </div>
             <div className="desc">
               <div className="name">Exterior</div>
+              <div className="title">
+                <span className="color">Co-Founder</span>
+              </div>
               <div className="content">
                 Make the most of compact spaces with space saving furniture that
                 are ingenuous and innovative. Transform your living spaces with
@@ -132,6 +150,69 @@ export default class Responsive extends Component {
             </div>
             <div className="desc">
               <div className="name">Furniture</div>
+              <div className="title">
+                <span className="color">Co-Founder</span>
+              </div>
+              <div className="content">
+                Make the most of compact spaces with space saving furniture that
+                are ingenuous and innovative. Transform your living spaces with
+                interior designs that make optimal use of available space.
+              </div>
+            </div>
+          </CustomSlide>
+          <CustomSlide className="itm" index={3}>
+            <div className="bg">
+              <img
+                src="./img/feature/img3.jpg"
+                className="img-fluid"
+                alt="Imageteam"
+              />
+            </div>
+            <div className="desc">
+              <div className="name">Exterior</div>
+              <div className="title">
+                <span className="color">Co-Founder</span>
+              </div>
+              <div className="content">
+                Make the most of compact spaces with space saving furniture that
+                are ingenuous and innovative. Transform your living spaces with
+                interior designs that make optimal use of available space.
+              </div>
+            </div>
+          </CustomSlide>
+          <CustomSlide className="itm" index={3}>
+            <div className="bg">
+              <img
+                src="./img/feature/img3.jpg"
+                className="img-fluid"
+                alt="Imageteam"
+              />
+            </div>
+            <div className="desc">
+              <div className="name">Exterior</div>
+              <div className="title">
+                <span className="color">Co-Founder</span>
+              </div>
+              <div className="content">
+                Make the most of compact spaces with space saving furniture that
+                are ingenuous and innovative. Transform your living spaces with
+                interior designs that make optimal use of available space.
+              </div>
+            </div>
+          </CustomSlide>
+          <CustomSlide className="itm" index={3}>
+            <div className="bg">
+              <img
+                src="./img/feature/img3.jpg"
+                className="img-fluid"
+                alt="Imageteam"
+              />
+            </div>
+            <div className="desc">
+              <div className="name">Exterior</div>
+              <div className="title">
+                <span className="color">Co-Founder</span>
+              </div>
               <div className="content">
                 Make the most of compact spaces with space saving furniture that
                 are ingenuous and innovative. Transform your living spaces with

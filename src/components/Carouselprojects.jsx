@@ -1,21 +1,16 @@
-import React, { Component } from "react";
-import Slider from "react-slick";
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-
+import React, { Component } from "react"
+import Slider from "react-slick"
+import "slick-carousel/slick/slick-theme.css"
+import "slick-carousel/slick/slick.css"
 
 class CustomSlide extends Component {
-
   render() {
-    const { index, ...props } = this.props;
-      return (
-        <div {...props}></div>
-      );
+    const { index, ...props } = this.props
+    return <div {...props}></div>
   }
 }
 
 export default class Responsive extends Component {
-
   render() {
     var settings = {
       dots: true,
@@ -31,8 +26,8 @@ export default class Responsive extends Component {
             slidesToShow: 4,
             slidesToScroll: 1,
             infinite: true,
-            dots: false
-          }
+            dots: false,
+          },
         },
         {
           breakpoint: 1600,
@@ -40,8 +35,8 @@ export default class Responsive extends Component {
             slidesToShow: 4,
             slidesToScroll: 1,
             infinite: true,
-            dots: false
-          }
+            dots: false,
+          },
         },
         {
           breakpoint: 1024,
@@ -49,109 +44,107 @@ export default class Responsive extends Component {
             slidesToShow: 3,
             slidesToScroll: 1,
             infinite: true,
-            dots: false
-          }
+            dots: false,
+          },
         },
         {
           breakpoint: 600,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
-            initialSlide: 2
-          }
+            initialSlide: 2,
+          },
         },
         {
           breakpoint: 480,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
-    };
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    }
 
     return (
-      <div className='slick slickproject'>
+      <div className="slick slickproject">
         <Slider {...settings}>
-
-          <CustomSlide className='itm' index={1}>
-            <div className='bg'>
+          <CustomSlide className="itm" index={1}>
+            <div className="bg">
               <img
-                src="./img/projects/img1.jpg"
+                src="./img/projects/project1.jpg"
                 className="img-fluid"
                 alt="Imageteam"
               />
             </div>
-            <div className='desc'>
-              <div className='tag'>Interior</div>
-              <div className='name'>Entertainment Unit</div>
+            <div className="desc">
+              <div className="tag">Interior</div>
+              <div className="name">Entertainment Unit</div>
             </div>
-            <div className='icon'>
-               <span onClick={()=> window.open("#", "_self")}>
+            <div className="icon">
+              <span onClick={() => window.open("#", "_self")}>
                 View Project
               </span>
             </div>
           </CustomSlide>
 
-          <CustomSlide className='itm' index={2}>
-            <div className='bg'>
+          <CustomSlide className="itm" index={2}>
+            <div className="bg">
               <img
-                src="./img/projects/img2.jpg"
+                src="./img/projects/project2.jpg"
                 className="img-fluid"
                 alt="Imageteam"
               />
             </div>
-            <div className='desc'>
-              <div className='tag'>Furniture</div>
-              <div className='name'>Mounted Unit</div>
+            <div className="desc">
+              <div className="tag">Furniture</div>
+              <div className="name">Mounted Unit</div>
             </div>
-            <div className='icon'>
-               <span onClick={()=> window.open("#", "_self")}>
+            <div className="icon">
+              <span onClick={() => window.open("#", "_self")}>
                 View Project
               </span>
             </div>
           </CustomSlide>
 
-          <CustomSlide className='itm' index={3}>
-            <div className='bg'>
+          <CustomSlide className="itm" index={3}>
+            <div className="bg">
               <img
-                src="./img/projects/img3.jpg"
+                src="./img/projects/project3.jpg"
                 className="img-fluid"
                 alt="Imageteam"
               />
             </div>
-            <div className='desc'>
-              <div className='tag'>Interior</div>
-              <div className='name'>Contemporary Wall</div>
+            <div className="desc">
+              <div className="tag">Interior</div>
+              <div className="name">Contemporary Wall</div>
             </div>
-            <div className='icon'>
-               <span onClick={()=> window.open("#", "_self")}>
+            <div className="icon">
+              <span onClick={() => window.open("#", "_self")}>
                 View Project
               </span>
             </div>
           </CustomSlide>
 
-          <CustomSlide className='itm' index={4}>
-            <div className='bg'>
+          <CustomSlide className="itm" index={4}>
+            <div className="bg">
               <img
-                src="./img/projects/img4.jpg"
+                src="./img/projects/project4.jpg"
                 className="img-fluid"
                 alt="Imageteam"
               />
             </div>
-            <div className='desc'>
-              <div className='tag'>Furniture</div>
-              <div className='name'>Crockery Unit</div>
+            <div className="desc">
+              <div className="tag">Furniture</div>
+              <div className="name">Crockery Unit</div>
             </div>
-            <div className='icon'>
-               <span onClick={()=> window.open("#", "_self")}>
+            <div className="icon">
+              <span onClick={() => window.open("#", "_self")}>
                 View Project
               </span>
             </div>
           </CustomSlide>
-
         </Slider>
       </div>
-    );
+    )
   }
 }

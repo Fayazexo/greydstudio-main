@@ -17,7 +17,9 @@ const Contact = ({ history }) => {
     setTimeout(() => {
       setShowMessage(false)
     }, 5000)
-    console.log(data)
+    const { Email, Message, Phone, Name } = data
+
+    console.log(Email, Message, Phone, Name)
   }
   return (
     <div>

@@ -1,5 +1,5 @@
-import { keyframes } from "styled-components";
-import theme from "../styles/theme";
+import { keyframes } from "styled-components"
+import theme from "../styles/theme"
 
 // ContainerContainer
 export const efect = keyframes`
@@ -9,7 +9,7 @@ export const efect = keyframes`
   100% {
     width: 0%;
   }
-`;
+`
 
 export const efectin = keyframes`
   from {
@@ -19,7 +19,7 @@ export const efectin = keyframes`
   to {
     width: 100%;
   }
-`;
+`
 
 export const loadIn = keyframes`
   0% {
@@ -29,7 +29,7 @@ export const loadIn = keyframes`
   100% {
     opacity: 1;
   }
-`;
+`
 
 export const toWork = keyframes`
   0% {
@@ -39,7 +39,7 @@ export const toWork = keyframes`
   100% {
     height: 100%;
   }
-`;
+`
 
 export const workToCase = keyframes`
   0% {
@@ -58,7 +58,7 @@ export const workToCase = keyframes`
     width: 100vw;
     opacity: 0;
   }
-`;
+`
 
 export const caseToWork = keyframes`
   0% {
@@ -67,7 +67,7 @@ export const caseToWork = keyframes`
     top: 0;
     height: 100vh;
     width: 0%;
-    background-color: ${theme.colors.black};
+    background-color: ${theme.colors.grey};
   }
   100% {
     border-radius: 0 !important;
@@ -75,12 +75,12 @@ export const caseToWork = keyframes`
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: ${theme.colors.black};
+    background-color: ${theme.colors.grey};
   }
-`;
+`
 
 // navigation
-export const openNavigation = hasBackground => keyframes`
+export const openNavigation = (hasBackground) => keyframes`
   0%{
     background-color: ${hasBackground ? theme.colors.white : `transparent`};
     right: 0;
@@ -97,8 +97,8 @@ export const openNavigation = hasBackground => keyframes`
     width: 420px;
     height: 100%;
   }
-`;
-export const openNavigationM = hasBackground => keyframes`
+`
+export const openNavigationM = (hasBackground) => keyframes`
   0%{
     background-color: ${hasBackground ? theme.colors.white : `transparent`};
     right: 0;
@@ -115,7 +115,7 @@ export const openNavigationM = hasBackground => keyframes`
     width: 100%;
     height: 100%;
   }
-`;
+`
 export const closeNavigation = keyframes`
   0%{
     opacity: 1;
@@ -123,7 +123,7 @@ export const closeNavigation = keyframes`
   100% {
     opacity: 0;
   }
-`;
+`
 export const disappear = keyframes`
   0% {
     opacity: 1;
@@ -131,7 +131,7 @@ export const disappear = keyframes`
   100% {
     opacity: 0;
   }
-`;
+`
 export const loadImage = keyframes`
   0% {
     opacity: 0;
@@ -139,7 +139,7 @@ export const loadImage = keyframes`
   100% {
     opacity: 1;
   }
-`;
+`
 export const openSpan = keyframes`
   0% {
     height:0px;
@@ -150,5 +150,4 @@ export const openSpan = keyframes`
     height: 1000%;
     width: 1000%;
   }
-`;
-
+`
