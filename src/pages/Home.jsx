@@ -4,7 +4,6 @@ import { withRouter } from "react-router-dom"
 import Abouthome from "../components/Abouthome"
 import Accomplish from "../components/Accomplish"
 import Carouselfeature from "../components/Carouselfeature"
-import Carouselnews from "../components/Carouselnews"
 import Carouselprojects from "../components/Carouselprojects"
 import Footer from "../components/Footer"
 import Slider from "../components/Sliderhome"
@@ -93,7 +92,7 @@ const Home = ({ history }) => {
         <Accomplish />
       </Reveal>
 
-      <Reveal effect="fadeInUp">
+      {/* <Reveal effect="fadeInUp">
         <section className="container-fluid pt-0">
           <div className="row m-2-hor">
             <div className="col-12">
@@ -104,7 +103,7 @@ const Home = ({ history }) => {
             </div>
           </div>
         </section>
-      </Reveal>
+      </Reveal> */}
 
       <Footer />
     </div>
