@@ -1,3 +1,4 @@
+import axios from "axios"
 import React, { useState } from "react"
 import { useForm } from "react-hook-form"
 import Reveal from "react-reveal/Reveal"
@@ -17,9 +18,8 @@ const Contact = ({ history }) => {
     setTimeout(() => {
       setShowMessage(false)
     }, 5000)
-    const { Email, Message, Phone, Name } = data
-
-    console.log(Email, Message, Phone, Name)
+    console.log(data)
+    axios.post("https://api.nodecandy.com/contact-forms", { data })
   }
   return (
     <div>
@@ -34,8 +34,8 @@ const Contact = ({ history }) => {
           <div className="row">
             <div className="col-12">
               <h1>
-                Get in touch with us to design <br />
-                your <span className="color">dream</span> home
+                Get in touch with us to Design <br />
+                your Dream home
               </h1>
             </div>
           </div>
@@ -47,12 +47,13 @@ const Contact = ({ history }) => {
           <div className="row">
             <div className="col-md-6">
               <div className="text-side">
-                <h3 className="heading">Talk with our expert designers </h3>
+                <h3 className="heading">
+                  Talk with our expert <span class="color">D'</span>esigners{" "}
+                </h3>
                 <p>
-                  Vestibulum volutpat, lacus a ultrices sagittis, mi neque
-                  euismod dui, eu pulvinar nunc sapien ornare nisl. <br />
-                  Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed,
-                  urna.
+                  Just with few clicks, you can start talking with us about your
+                  dream home design, Use the form to submit your information and
+                  we will be in touch right away.
                 </p>
                 <div className="address">
                   <div className="heading">Our Office</div>
@@ -103,7 +104,7 @@ const Contact = ({ history }) => {
                     placeholder="Enter your phone number"
                     type="phone"
                     name="phone"
-                    {...register("Mobile Number", {
+                    {...register("Phone", {
                       required: true,
                     })}
                   />

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { withRouter } from "react-router"
+import GreyLogo from "../Assets/logowhite.svg"
 import {
   Body,
   Container,
@@ -103,9 +104,11 @@ const NavigationMenu = ({ history, hasBackground, setBackground }) => {
     <header>
       <div id="header"></div>
       <div className="navBar">
-        <div className="logo">
-          <img src={"./img/logowhite.png"} className="img-fluid" alt="#" />
-          <span className="callus">Call Us: +880 19 8935 9890</span>
+        <div className="navLogo">
+          <div className="logo">
+            <img src={GreyLogo} className="img-fluid" alt="#" />
+            <span className="callus">Call Us: +880 19 8935 9890</span>
+          </div>
         </div>
         <div className="navLinks">
           <span onClick={() => setLinkHandler("home")} className="links">
@@ -124,7 +127,7 @@ const NavigationMenu = ({ history, hasBackground, setBackground }) => {
             Our Teams
           </span>
           <span onClick={() => setLinkHandler("landowners")} className="links">
-            Land Owners
+            Land Wanted
           </span>
           <span onClick={() => setLinkHandler("contact")} className="links">
             Contact Us
@@ -198,9 +201,11 @@ const NavigationMenu = ({ history, hasBackground, setBackground }) => {
           </div>
 
           <div className="info">
-            <span>(+6221) 000 888 999</span>
-            <span className="link">support@homekins.com</span>
-            <span>129 Park street, New York 10903</span>
+            <span>+880 19 8935 9890</span>
+            <span className="link">info@greydstudio.net</span>
+            <span>
+              House 44/i, Flat A1, Road 4, Block D Bashundhara R/A, Dhaka 1229.
+            </span>
           </div>
         </Body>
         <SocialContainer className="soc-icon" open={isOn}>

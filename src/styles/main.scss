@@ -235,21 +235,27 @@ section {
     }
   }
 }
+.navLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .logo {
   position: fixed;
-  top: 28px;
+  top: 21px;
   left: 30px;
   z-index: 99;
   margin-left: calc(100vw - 95vw);
+  width: 100px;
   .callus {
-    position: relative;
-    top: 4px;
+    position: fixed;
+    top: 34px;
     font-size: 0.8rem;
     font-weight: 600;
     color: $white;
     padding-left: 30px;
-    margin-left: 45px;
-    border-left: 3px solid rgba(255, 255, 255, 0.8);
+    margin-left: 20px;
+    border-left: 3px solid;
   }
 }
 @media (max-width: 640px) {
@@ -770,7 +776,8 @@ section {
             font-weight: 500;
             font-size: 1.6rem;
             letter-spacing: 0.6px;
-            padding-bottom: 20px;
+            line-height: 50px;
+            padding-bottom: 45px;
           }
           .content {
             position: relative;
@@ -1033,7 +1040,7 @@ section {
       position: absolute;
       bottom: -10%;
       right: 10%;
-      border: 10px solid $gray_more;
+      border: 10px solid $color;
     }
   }
   .list-home {

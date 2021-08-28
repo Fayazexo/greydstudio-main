@@ -1,5 +1,5 @@
-import React from "react";
-import styled, { css } from "styled-components";
+import React from "react"
+import styled, { css } from "styled-components"
 
 const NavButton = ({ open, closing }) => {
   return (
@@ -8,10 +8,10 @@ const NavButton = ({ open, closing }) => {
       <Bar2 />
       <Bar3 />
     </Circle>
-  );
-};
+  )
+}
 
-export default NavButton;
+export default NavButton
 
 const BaseBarStyle = styled.div`
   cursor: pointer;
@@ -20,20 +20,20 @@ const BaseBarStyle = styled.div`
   height: 4px;
   background-color: white;
   transition: width 0.2s ease-in-out, transform 0.2s ease-in-out,
-  opacity 0.2s ease-in-out;
-`;
+    opacity 0.2s ease-in-out;
+`
 
 export const Bar1 = styled(BaseBarStyle)`
   width: 100%;
-`;
+`
 
 export const Bar2 = styled(BaseBarStyle)`
   width: 61%;
-`;
+`
 
 export const Bar3 = styled(BaseBarStyle)`
   width: 21%;
-`;
+`
 
 const BaseCircle = styled.div`
   position: relative;
@@ -46,7 +46,7 @@ const BaseCircle = styled.div`
     display: none;
     transition: all 0.3s ease-in-out;
   }
-`;
+`
 
 const Circle = styled(BaseCircle)`
   ${({ open }) =>
@@ -79,4 +79,4 @@ const Circle = styled(BaseCircle)`
       : css`
           padding: 20px 15px;
         `}
-`;
+`

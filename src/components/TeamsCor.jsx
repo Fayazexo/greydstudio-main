@@ -24,7 +24,7 @@ export default class Responsive extends Component {
         {
           breakpoint: 5000,
           settings: {
-            slidesToShow: 4,
+            slidesToShow: 3,
             slidesToScroll: 1,
             infinite: false,
             dots: false,
@@ -33,7 +33,7 @@ export default class Responsive extends Component {
         {
           breakpoint: 1600,
           settings: {
-            slidesToShow: 4,
+            slidesToShow: 3,
             slidesToScroll: 1,
             infinite: false,
             dots: false,
@@ -80,15 +80,17 @@ export default class Responsive extends Component {
           <CustomSlide className="itm" index={1}>
             <div className="bg">
               <img
-                src="./img/feature/img1.jpg"
+                src="./img/team/img1.png"
                 className="img-fluid"
                 alt="Imageteam"
               />
             </div>
             <div className="desc">
-              <div className="name">Interior</div>
-              <div className="title">
-                <span className="color">Co-Founder</span>
+              <div className="name">
+                Khandoker Arif Ahmad
+                <div className="title">
+                  <span className="color">Director, COO</span>
+                </div>
               </div>
               <div className="content">
                 Make the most of compact spaces with space saving furniture that
@@ -101,15 +103,17 @@ export default class Responsive extends Component {
           <CustomSlide className="itm" index={2}>
             <div className="bg">
               <img
-                src="./img/feature/img2.jpg"
+                src="./img/team/img3.png"
                 className="img-fluid"
                 alt="Imageteam"
               />
             </div>
             <div className="desc">
-              <div className="name">Architecture</div>
-              <div className="title">
-                <span className="color">Co-Founder</span>
+              <div className="name">
+                Muhitul Al Kaisar
+                <div className="title">
+                  <span className="color">Chairperson</span>
+                </div>
               </div>
               <div className="content">
                 Make the most of compact spaces with space saving furniture that
@@ -122,15 +126,19 @@ export default class Responsive extends Component {
           <CustomSlide className="itm" index={3}>
             <div className="bg">
               <img
-                src="./img/feature/img3.jpg"
+                src="./img/team/img2.png"
                 className="img-fluid"
                 alt="Imageteam"
               />
             </div>
             <div className="desc">
-              <div className="name">Exterior</div>
-              <div className="title">
-                <span className="color">Co-Founder</span>
+              <div className="name">
+                Muksitul.M Tanim Hasan
+                <div className="title">
+                  <span className="color">
+                    Director, Head of Sales and Marketing
+                  </span>
+                </div>
               </div>
               <div className="content">
                 Make the most of compact spaces with space saving furniture that
@@ -140,7 +148,7 @@ export default class Responsive extends Component {
             </div>
           </CustomSlide>
 
-          <CustomSlide className="itm" index={4}>
+          {/* <CustomSlide className="itm" index={4}>
             <div className="bg">
               <img
                 src="./img/feature/img4.jpg"
@@ -219,7 +227,7 @@ export default class Responsive extends Component {
                 interior designs that make optimal use of available space.
               </div>
             </div>
-          </CustomSlide>
+          </CustomSlide> */}
         </Slider>
       </div>
     )

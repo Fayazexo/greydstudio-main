@@ -71,7 +71,7 @@ export default class Responsive extends Component {
           <CustomSlide className="itm" index={1}>
             <div className="bg">
               <img
-                src="./img/projects/project1.jpg"
+                src="./img/projects/project1.png"
                 className="img-fluid"
                 alt="Imageteam"
               />
@@ -90,7 +90,7 @@ export default class Responsive extends Component {
           <CustomSlide className="itm" index={2}>
             <div className="bg">
               <img
-                src="./img/projects/project2.jpg"
+                src="./img/projects/project2.png"
                 className="img-fluid"
                 alt="Imageteam"
               />
@@ -109,7 +109,7 @@ export default class Responsive extends Component {
           <CustomSlide className="itm" index={3}>
             <div className="bg">
               <img
-                src="./img/projects/project3.jpg"
+                src="./img/projects/project3.png"
                 className="img-fluid"
                 alt="Imageteam"
               />
@@ -128,7 +128,7 @@ export default class Responsive extends Component {
           <CustomSlide className="itm" index={4}>
             <div className="bg">
               <img
-                src="./img/projects/project4.jpg"
+                src="./img/projects/project4.png"
                 className="img-fluid"
                 alt="Imageteam"
               />

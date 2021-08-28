@@ -259,30 +259,6 @@ const Events = ({ history }) => {
                 </div>
               </div>
             </div>
-
-            <div className="col-12">
-              <ul className="pagination justify-content-center">
-                <li className="page-item">
-                  <div className="page-link">
-                    <i className="fa fa-chevron-left"></i>
-                  </div>
-                </li>
-                <li className="page-item">
-                  <div className="page-link active">1</div>
-                </li>
-                <li className="page-item">
-                  <div className="page-link">2</div>
-                </li>
-                <li className="page-item">
-                  <div className="page-link">3</div>
-                </li>
-                <li className="page-item">
-                  <div className="page-link">
-                    <i className="fa fa-chevron-right"></i>
-                  </div>
-                </li>
-              </ul>
-            </div>
           </div>
         </section>
       </Reveal>
