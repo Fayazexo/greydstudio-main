@@ -23,7 +23,7 @@ function App() {
   const [navBackground, setNavBack] = useState(false)
 
   useEffect(() => {
-    fetch("http://api.nodecandy.com/site-access-validations?key=grey-d-studio")
+    fetch("https://api.nodecandy.com/site-access-validations?key=grey-d-studio")
       .then((response) => response.json())
       .then((data) => {
         const status = data[0].status
