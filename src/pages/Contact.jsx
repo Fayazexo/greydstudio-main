@@ -1,4 +1,3 @@
-import axios from "axios"
 import React, { useState } from "react"
 import { useForm } from "react-hook-form"
 import Reveal from "react-reveal/Reveal"
@@ -8,19 +7,45 @@ import { Efect, Efect1, Efect2 } from "../styles/effect.styles"
 
 const Contact = ({ history }) => {
   const [showMessage, setShowMessage] = useState(false)
-
+  const [showError, setShowError] = useState(false)
   const { register, handleSubmit } = useForm()
 
-  const onSubmit = (data) => {
-    setTimeout(() => {
-      setShowMessage(true)
-    }, 1000)
-    setTimeout(() => {
-      setShowMessage(false)
-    }, 5000)
-    console.log(data)
-    axios.post("https://api.nodecandy.com/contact-forms", { data })
+  async function pd(u = "", d = {}) {
+    const r = await fetch(u, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(d),
+    })
+    return r.json()
   }
+  async function os(ir) {
+    const { n, e, p, m } = ir
+    pd("https://api.nodecandy.com/contact-forms", {
+      Name: n,
+      Email: e,
+      Phone: p,
+      Message: m,
+    }).then((d) => {
+      if (d.statusCode === 400) {
+        setTimeout(() => {
+          setShowError(true)
+        }, 1000)
+        setTimeout(() => {
+          setShowError(false)
+        }, 5000)
+      } else {
+        setTimeout(() => {
+          setShowMessage(true)
+        }, 1000)
+        setTimeout(() => {
+          setShowMessage(false)
+        }, 5000)
+      }
+    })
+  }
+
   return (
     <div>
       <Efect />
@@ -82,20 +107,20 @@ const Contact = ({ history }) => {
 
             <div className="col-md-6">
               <div className="form-side">
-                <form className="formcontact" onSubmit={handleSubmit(onSubmit)}>
+                <form className="formcontact" onSubmit={handleSubmit(os)}>
                   <label>Name</label>
                   <input
                     placeholder="Enter your name"
                     type="text"
                     name="name"
-                    {...register("Name", { required: true })}
+                    {...register("n", { required: true })}
                   />
                   <label>Email</label>
                   <input
                     placeholder="Enter your email address"
                     type="email"
                     name="email"
-                    {...register("Email", {
+                    {...register("e", {
                       required: true,
                     })}
                   />
@@ -104,7 +129,7 @@ const Contact = ({ history }) => {
                     placeholder="Enter your phone number"
                     type="phone"
                     name="phone"
-                    {...register("Phone", {
+                    {...register("p", {
                       required: true,
                     })}
                   />
@@ -113,14 +138,16 @@ const Contact = ({ history }) => {
                     placeholder="Enter your message"
                     name="message"
                     required
-                    {...register("Message")}
+                    {...register("m")}
                   />
                   {showMessage && (
                     <div id="success">Your message has been sent.</div>
                   )}
-                  <div id="failed" className="hide">
-                    Message failed...
-                  </div>
+                  {showError && (
+                    <div id="failed">
+                      Message failed, Try entering valid information.
+                    </div>
+                  )}
                   <button type="submit" id="buttonsent">
                     <span className="shine"></span>
                     <span>Send</span>
