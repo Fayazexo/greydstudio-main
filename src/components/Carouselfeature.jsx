@@ -77,7 +77,7 @@ export default class Responsive extends Component {
               />
             </div>
             <div className="desc">
-              <div className="name">Interior</div>
+              <div className="name">Architectural Consultancy</div>
               <div className="content">
                 Make the most of compact spaces with space saving furniture that
                 are ingenuous and innovative. Transform your living spaces with
@@ -95,7 +95,7 @@ export default class Responsive extends Component {
               />
             </div>
             <div className="desc">
-              <div className="name">Architecture</div>
+              <div className="name">Building Development</div>
               <div className="content">
                 Make the most of compact spaces with space saving furniture that
                 are ingenuous and innovative. Transform your living spaces with
@@ -113,7 +113,7 @@ export default class Responsive extends Component {
               />
             </div>
             <div className="desc">
-              <div className="name">Exterior</div>
+              <div className="name">Construction Management</div>
               <div className="content">
                 Make the most of compact spaces with space saving furniture that
                 are ingenuous and innovative. Transform your living spaces with
@@ -131,7 +131,7 @@ export default class Responsive extends Component {
               />
             </div>
             <div className="desc">
-              <div className="name">Furniture</div>
+              <div className="name">Interior Design</div>
               <div className="content">
                 Make the most of compact spaces with space saving furniture that
                 are ingenuous and innovative. Transform your living spaces with
@@ -148,7 +148,7 @@ export default class Responsive extends Component {
               />
             </div>
             <div className="desc">
-              <div className="name">Interior</div>
+              <div className="name">Furniture Design</div>
               <div className="content">
                 Make the most of compact spaces with space saving furniture that
                 are ingenuous and innovative. Transform your living spaces with
@@ -165,7 +165,7 @@ export default class Responsive extends Component {
               />
             </div>
             <div className="desc">
-              <div className="name">Interior</div>
+              <div className="name">Landscaping</div>
               <div className="content">
                 Make the most of compact spaces with space saving furniture that
                 are ingenuous and innovative. Transform your living spaces with
