@@ -56,14 +56,14 @@ const Works = ({ history }) => {
                       >
                         <div className="bg">
                           <img
-                            src="./img/projects/img1.jpg"
+                            src="./img/projects/Project-Banner-Kalam-Interior.jpg"
                             className="img-fluid"
                             alt="Imageworks"
                           />
                         </div>
                         <div className="desc">
                           <div className="tag">Interior</div>
-                          <div className="name">Entertainment Unit</div>
+                          <div className="name">Kalam</div>
                         </div>
                         <div className="icon">
                           <span>View Project</span>
@@ -89,14 +89,14 @@ const Works = ({ history }) => {
                       >
                         <div className="bg">
                           <img
-                            src="./img/projects/img2.jpg"
+                            src="./img/projects/Project-Banner-Emon-Interior.jpg"
                             className="img-fluid"
                             alt="Imageworks"
                           />
                         </div>
                         <div className="desc">
-                          <div className="tag">Furniture</div>
-                          <div className="name">Mounted Unit</div>
+                          <div className="tag">Interior</div>
+                          <div className="name">Emon</div>
                         </div>
                         <div className="icon">
                           <span>View Project</span>
@@ -122,14 +122,14 @@ const Works = ({ history }) => {
                       >
                         <div className="bg">
                           <img
-                            src="./img/projects/img3.jpg"
+                            src="./img/projects/Project-Banner-Akram-Ali-Khan-1st-Floor.jpg"
                             className="img-fluid"
                             alt="Imageworks"
                           />
                         </div>
                         <div className="desc">
                           <div className="tag">Interior</div>
-                          <div className="name">Contemporary Wall</div>
+                          <div className="name">Akram Ali Khan 1st Floor</div>
                         </div>
                         <div className="icon">
                           <span>View Project</span>
@@ -155,14 +155,14 @@ const Works = ({ history }) => {
                       >
                         <div className="bg">
                           <img
-                            src="./img/projects/img4.jpg"
+                            src="./img/projects/Project-Banner-Maruf-Interior.jpg"
                             className="img-fluid"
                             alt="Imageworks"
                           />
                         </div>
                         <div className="desc">
                           <div className="tag">Interior</div>
-                          <div className="name">Crockery Wall</div>
+                          <div className="name">Maruf</div>
                         </div>
                         <div className="icon">
                           <span>View Project</span>
@@ -188,14 +188,14 @@ const Works = ({ history }) => {
                       >
                         <div className="bg">
                           <img
-                            src="./img/projects/img1.jpg"
+                            src="./img/projects/Project-Banner-Mehreen-Interior.jpg"
                             className="img-fluid"
                             alt="Imageworks"
                           />
                         </div>
                         <div className="desc">
                           <div className="tag">Interior</div>
-                          <div className="name">Entertainment Unit</div>
+                          <div className="name">Mehreen</div>
                         </div>
                         <div className="icon">
                           <span>View Project</span>
@@ -221,14 +221,14 @@ const Works = ({ history }) => {
                       >
                         <div className="bg">
                           <img
-                            src="./img/projects/img2.jpg"
+                            src="./img/projects/Project-Banner-Mahadi-&-Farah-Interior.jpg"
                             className="img-fluid"
                             alt="Imageworks"
                           />
                         </div>
                         <div className="desc">
-                          <div className="tag">Furniture</div>
-                          <div className="name">Mounted Unit</div>
+                          <div className="tag">Interior</div>
+                          <div className="name">Mahadi & Farah</div>
                         </div>
                         <div className="icon">
                           <span>View Project</span>
