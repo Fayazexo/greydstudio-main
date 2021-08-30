@@ -42,9 +42,12 @@ export default () => (
         <div className="footer-col">
           <div className="heading right">Call Us</div>
           <div className="content right flexo">
-            <a href="/" className="link right">
+            <span
+              onClick={() => window.open("tel:+8801989359890")}
+              className="link right"
+            >
               +880 19 8935 9890
-            </a>
+            </span>
           </div>
           <div className="heading right">Office Address</div>
           <div className="content right">
