@@ -99,15 +99,27 @@ const NavigationMenu = ({ history, hasBackground, setBackground }) => {
       window.removeEventListener("scroll", scrollCallBack)
     }
   }, [])
-
+  const openLinks = (url) => {
+    window.open(url)
+  }
   return (
     <header>
       <div id="header"></div>
       <div className="navBar">
         <div className="navLogo">
           <div className="logo">
-            <img src={GreyLogo} className="img-fluid" alt="#" />
-            <span className="callus">Call Us: +880 19 8935 9890</span>
+            <img
+              onClick={() => setLinkHandler("home")}
+              src={GreyLogo}
+              className="img-fluid logolink"
+              alt="#"
+            />
+            <span
+              onClick={() => openLinks("tel:+8801989359890")}
+              className="callus"
+            >
+              Call Us: +880 19 8935 9890
+            </span>
           </div>
         </div>
         <div className="navLinks">
