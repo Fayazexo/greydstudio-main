@@ -139,6 +139,40 @@ export default class Responsive extends Component {
               </div>
             </div>
           </CustomSlide>
+          <CustomSlide className="itm" index={4}>
+            <div className="bg">
+              <img
+                src="./img/feature/img1.jpg"
+                className="img-fluid"
+                alt="Imageteam"
+              />
+            </div>
+            <div className="desc">
+              <div className="name">Interior</div>
+              <div className="content">
+                Make the most of compact spaces with space saving furniture that
+                are ingenuous and innovative. Transform your living spaces with
+                interior designs that make optimal use of available space.
+              </div>
+            </div>
+          </CustomSlide>
+          <CustomSlide className="itm" index={5}>
+            <div className="bg">
+              <img
+                src="./img/feature/img1.jpg"
+                className="img-fluid"
+                alt="Imageteam"
+              />
+            </div>
+            <div className="desc">
+              <div className="name">Interior</div>
+              <div className="content">
+                Make the most of compact spaces with space saving furniture that
+                are ingenuous and innovative. Transform your living spaces with
+                interior designs that make optimal use of available space.
+              </div>
+            </div>
+          </CustomSlide>
         </Slider>
       </div>
     )
