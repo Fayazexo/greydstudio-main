@@ -71,14 +71,14 @@ export default class Responsive extends Component {
           <CustomSlide className="itm" index={1}>
             <div className="bg">
               <img
-                src="./img/projects/project1.png"
+                src="./img/projects/Project-Banner-Kalam-Interior.jpg"
                 className="img-fluid"
                 alt="Imageteam"
               />
             </div>
             <div className="desc">
               <div className="tag">Interior</div>
-              <div className="name">Entertainment Unit</div>
+              <div className="name">Kalam</div>
             </div>
             <div className="icon">
               <span onClick={() => window.open("#", "_self")}>
@@ -90,14 +90,14 @@ export default class Responsive extends Component {
           <CustomSlide className="itm" index={2}>
             <div className="bg">
               <img
-                src="./img/projects/project2.png"
+                src="./img/projects/Project-Banner-Emon-Interior.jpg"
                 className="img-fluid"
                 alt="Imageteam"
               />
             </div>
             <div className="desc">
-              <div className="tag">Furniture</div>
-              <div className="name">Mounted Unit</div>
+              <div className="tag">Interior</div>
+              <div className="name">Emon</div>
             </div>
             <div className="icon">
               <span onClick={() => window.open("#", "_self")}>
@@ -109,14 +109,14 @@ export default class Responsive extends Component {
           <CustomSlide className="itm" index={3}>
             <div className="bg">
               <img
-                src="./img/projects/project3.png"
+                src="./img/projects/Project-Banner-Akram-Ali-Khan-1st-Floor.jpg"
                 className="img-fluid"
                 alt="Imageteam"
               />
             </div>
             <div className="desc">
               <div className="tag">Interior</div>
-              <div className="name">Contemporary Wall</div>
+              <div className="name">Akram Ali Khan 1st Floor</div>
             </div>
             <div className="icon">
               <span onClick={() => window.open("#", "_self")}>
@@ -128,14 +128,14 @@ export default class Responsive extends Component {
           <CustomSlide className="itm" index={4}>
             <div className="bg">
               <img
-                src="./img/projects/project4.png"
+                src="./img/projects/Project-Banner-Maruf-Interior.jpg"
                 className="img-fluid"
                 alt="Imageteam"
               />
             </div>
             <div className="desc">
-              <div className="tag">Furniture</div>
-              <div className="name">Crockery Unit</div>
+              <div className="tag">Interior</div>
+              <div className="name">Maruf</div>
             </div>
             <div className="icon">
               <span onClick={() => window.open("#", "_self")}>
