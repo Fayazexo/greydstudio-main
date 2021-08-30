@@ -36,8 +36,8 @@ const NavigationMenu = ({ history, hasBackground, setBackground }) => {
             setState(false)
             setLink("")
             break
-          case "events":
-            history.push("/events")
+          case "news":
+            history.push("/news")
             setState(false)
             setLink("")
             break
@@ -132,8 +132,8 @@ const NavigationMenu = ({ history, hasBackground, setBackground }) => {
           <span onClick={() => setLinkHandler("projects")} className="links">
             Project
           </span>
-          <span onClick={() => setLinkHandler("events")} className="links">
-            Events
+          <span onClick={() => setLinkHandler("news")} className="links">
+            News
           </span>
           <span onClick={() => setLinkHandler("teams")} className="links">
             Our Teams
@@ -185,9 +185,9 @@ const NavigationMenu = ({ history, hasBackground, setBackground }) => {
             <Page
               className="mainBtn"
               variant="about"
-              onClick={() => setLinkHandler("events")}
+              onClick={() => setLinkHandler("News")}
             >
-              <LinkTag>Events</LinkTag>
+              <LinkTag>News</LinkTag>
             </Page>
             <Page
               className="mainBtn"
