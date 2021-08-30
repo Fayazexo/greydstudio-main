@@ -88,6 +88,18 @@ function App() {
               <Newsdetail setNavBackground={(state) => setNavBack(state)} />
             )}
           />
+          <Route
+            path="/detailcase4"
+            component={() => (
+              <Case1 setNavBackground={(state) => setNavBack(state)} />
+            )}
+          />
+          <Route
+            path="/detailcase5"
+            component={() => (
+              <Case1 setNavBackground={(state) => setNavBack(state)} />
+            )}
+          />
 
           <ScrollToTopBtn />
         </div>
