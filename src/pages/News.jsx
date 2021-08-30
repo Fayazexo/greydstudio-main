@@ -29,7 +29,7 @@ const Events = ({ history }) => {
         <section className="container-fluid pb-0">
           <div className="row m-2-hor">
             <div className="col-md-12">
-              <h1 className="heading mt-5">Latest News From Our Works </h1>
+              <h1 className="heading mt-5">Latest News About Our Works</h1>
             </div>
           </div>
         </section>
