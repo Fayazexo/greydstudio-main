@@ -6,22 +6,22 @@ const content = [
   {
     title: "Exterior Design",
     description: "With precision",
-    button: "More Detail",
-    link: "/#",
+    // button: "More Detail",
+    // link: "/#",
     image: "./img/bg-1.jpg",
   },
   {
     title: "Interior Expertise",
     description: "Stylish living",
-    button: "More Detail",
-    link: "/#",
+    // button: "More Detail",
+    // link: "/#",
     image: "./img/bg-2.jpg",
   },
   {
     title: "Land of Residence",
     description: "According lifestyle",
-    button: "More Detail",
-    link: "/#",
+    // button: "More Detail",
+    // link: "/#",
     image: "./img/bg-3.jpg",
   },
 ]
@@ -37,10 +37,10 @@ export default () => (
         <div className="inner">
           <h1>{item.title}</h1>
           <p>{item.description}</p>
-          <button onClick={() => window.open(item.link, "_self")}>
+          {/* <button onClick={() => window.open(item.link, "_self")}>
             <span className="shine"></span>
             <span>{item.button}</span>
-          </button>
+          </button> */}
         </div>
       </div>
     ))}

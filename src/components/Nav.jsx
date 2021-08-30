@@ -130,7 +130,7 @@ const NavigationMenu = ({ history, hasBackground, setBackground }) => {
             About
           </span>
           <span onClick={() => setLinkHandler("projects")} className="links">
-            Project
+            Projects
           </span>
           <span onClick={() => setLinkHandler("news")} className="links">
             News

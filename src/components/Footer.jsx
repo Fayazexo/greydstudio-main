@@ -1,5 +1,4 @@
 import React from "react"
-
 export default () => (
   <footer className="container-fluid black_more">
     <div className="bg-footer">
@@ -55,19 +54,41 @@ export default () => (
               House 44/i, Flat A1, Road 4, Block D <br />
               Bashundhara R/A, Dhaka 1229.
             </p>
-            <div className="socialicon">
+            <div
+              onClick={() =>
+                window.open("https://www.facebook.com/grey.dstudio")
+              }
+              className="socialicon"
+            >
               <span className="shine"></span>
               <i className="fa fa-facebook-f"></i>
             </div>
-            <div className="socialicon">
+            <div
+              onClick={() =>
+                window.open("https://www.instagram.com/grey.dstudio")
+              }
+              className="socialicon"
+            >
               <span className="shine"></span>
               <i className="fa fa-linkedin"></i>
             </div>
-            <div className="socialicon">
+            <div
+              onClick={() =>
+                window.open(
+                  "https://www.youtube.com/channel/UC3xp7sMMGt5N3e5j_5VyhKg"
+                )
+              }
+              className="socialicon"
+            >
               <span className="shine"></span>
-              <i className="fa fa-twitter"></i>
+              <i className="fa fa-youtube"></i>
             </div>
-            <div className="socialicon">
+            <div
+              onClick={() =>
+                window.open("https://www.instagram.com/grey.dstudio")
+              }
+              className="socialicon"
+            >
               <span className="shine"></span>
               <i className="fa fa-instagram"></i>
             </div>
