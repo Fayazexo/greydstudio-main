@@ -178,12 +178,12 @@ const Works = ({ history }) => {
               <div className="slick-slide d-block">
                 <div>
                   <div className="itm">
-                    <LinkWrap active={toCase === "/detailcase"}>
+                    <LinkWrap active={toCase === "/detailcase4"}>
                       <Overlay
                         active={!!toCase}
                         onMouseDown={(e) => setCoords(e.nativeEvent.x)}
                         onMouseUp={(e) =>
-                          handleCaseSwap(e.nativeEvent, "/detailcase")
+                          handleCaseSwap(e.nativeEvent, "/detailcase4")
                         }
                       >
                         <div className="bg">
@@ -211,12 +211,12 @@ const Works = ({ history }) => {
               <div className="slick-slide d-block">
                 <div>
                   <div className="itm">
-                    <LinkWrap active={toCase === "/detailcase1"}>
+                    <LinkWrap active={toCase === "/detailcase5"}>
                       <Overlay
                         active={!!toCase}
                         onMouseDown={(e) => setCoords(e.nativeEvent.x)}
                         onMouseUp={(e) =>
-                          handleCaseSwap(e.nativeEvent, "/detailcase1")
+                          handleCaseSwap(e.nativeEvent, "/detailcase5")
                         }
                       >
                         <div className="bg">
