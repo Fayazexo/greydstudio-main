@@ -256,7 +256,11 @@ section {
     padding-left: 30px;
     margin-left: 20px;
     border-left: 3px solid;
+    cursor: pointer;
   }
+}
+.logolink {
+  cursor: pointer;
 }
 @media (max-width: 640px) {
   .callus {
