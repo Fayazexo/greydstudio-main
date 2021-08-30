@@ -24,6 +24,13 @@ const content = [
     // link: "/#",
     image: "./img/bg-3.jpg",
   },
+  {
+    title: "Land of Residence",
+    description: "According lifestyle",
+    // button: "More Detail",
+    // link: "/#",
+    image: "./img/bg-4.jpg",
+  },
 ]
 
 export default () => (
