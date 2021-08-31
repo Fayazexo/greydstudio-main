@@ -11,9 +11,29 @@ export default () => (
       </div>
       <div className="col-12">
         <div className="listcomplish">
+          <span className="year">2021</span>
+          <span className="content">
+            Berger Faboulous Home Awards (Second One)
+          </span>
+          <span className="detail">Awards Received</span>
+        </div>
+        <div className="listcomplish">
+          <span className="year">2020</span>
+          <span className="content">
+            Berger Faboulous Home Awards (First One)
+          </span>
+          <span className="detail">Awards Received</span>
+        </div>
+
+        <div className="listcomplish">
           <span className="year">2020</span>
           <span className="content">50+ Interior Designs</span>
           <span className="detail">Modern Interior Design </span>
+        </div>
+        <div className="listcomplish">
+          <span className="year">2020</span>
+          <span className="content">Project Completed GreenEdge</span>
+          <span className="detail">Our Signature Housing Project</span>
         </div>
         <div className="listcomplish">
           <span className="year">2019</span>
@@ -21,31 +41,14 @@ export default () => (
           <span className="detail">Minimalistic Home Designs</span>
         </div>
         <div className="listcomplish">
-          <span className="year">2019</span>
-          <span className="content">Contemporary Entertainment Wall Units</span>
-          <span className="detail">Entertainment</span>
-        </div>
-        <div className="listcomplish">
-          <span className="year">2018</span>
-          <span className="content">Space Saving Furniture Palermo</span>
-          <span className="detail">Modern Furniture</span>
-        </div>
-        <div className="listcomplish">
-          <span className="year">2018</span>
-          <span className="content">
-            Eclectic Theme Interiors For Living Room
-          </span>
-          <span className="detail">Modern Interiors</span>
-        </div>
-        <div className="listcomplish">
-          <span className="year">2018</span>
-          <span className="content">Pop Theme Home Interiors</span>
-          <span className="detail">Home Interiors</span>
-        </div>
-        <div className="listcomplish">
           <span className="year">2017</span>
-          <span className="content">Kid Friendly Theme Home Interiors</span>
-          <span className="detail">Kid Modern Interiors</span>
+          <span className="content">First Construction Completed </span>
+          <span className="detail">Modern Housing Banani</span>
+        </div>
+        <div className="listcomplish">
+          <span className="year">2013</span>
+          <span className="content">Started Our Journey.</span>
+          <span className="detail">As Consultancy</span>
         </div>
       </div>
     </div>

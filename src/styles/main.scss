@@ -780,8 +780,6 @@ section {
             font-weight: 500;
             font-size: 1.6rem;
             letter-spacing: 0.6px;
-            line-height: 50px;
-            padding-bottom: 45px;
           }
           .content {
             position: relative;
@@ -795,7 +793,6 @@ section {
             font-weight: 400;
             font-size: 0.9rem;
             line-height: 1.5;
-            margin-top: -15px;
             transition: all 0.3s ease;
           }
           .date {
@@ -850,7 +847,6 @@ section {
             transition: all 0.9s ease;
           }
           .title {
-            line-height: 0.9;
             transition: all 0.3s ease;
           }
         }

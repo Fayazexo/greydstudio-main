@@ -52,21 +52,53 @@ const Events = ({ history }) => {
                       >
                         <div className="bg">
                           <img
-                            src="./img/news/img1.jpg"
+                            src="./img/news/news1.jpg"
                             className="img-fluid"
                             alt="Imageteam"
                           />
                         </div>
                         <div className="desc">
-                          <div className="date"> Sept 08, 2020</div>
-                          <div className="name">Pacific Region Awards</div>
-                          <div className="content">
-                            Make the most of compact spaces with space saving
-                            furniture that are ingenuous and innovative.
+                          <div className="date"> Aug 24, 2021</div>
+                          <div className="name">
+                            Project GREEN EDGE by Grey.D'Studio
                           </div>
                         </div>
                         <div className="icon">
-                          <span>Read More</span>
+                          <span>Watch on YouTube</span>
+                        </div>
+                      </Overlay>
+                    </LinkWrap>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4 slick slicknews p-3 mb-0">
+              <div className="slick-slide d-block">
+                <div className="mr-0">
+                  <div className="itm mr-0">
+                    <LinkWrap active={toCase === "/detailnews"}>
+                      <Overlay
+                        active={!!toCase}
+                        onMouseDown={(e) => setCoords(e.nativeEvent.x)}
+                        onMouseUp={(e) =>
+                          handleCaseSwap(e.nativeEvent, "/detailnews")
+                        }
+                      >
+                        <div className="bg">
+                          <img
+                            src="./img/news/news2.jpg"
+                            className="img-fluid"
+                            alt="Imageteam"
+                          />
+                        </div>
+                        <div className="desc">
+                          <div className="date"> Mar 12, 2021</div>
+                          <div className="name">
+                            Berger Home Diaries - Fabulous House 2
+                          </div>
+                        </div>
+                        <div className="icon">
+                          <span>Watch on YouTube</span>
                         </div>
                       </Overlay>
                     </LinkWrap>
@@ -89,169 +121,19 @@ const Events = ({ history }) => {
                       >
                         <div className="bg">
                           <img
-                            src="./img/news/img2.jpg"
+                            src="./img/news/news3.jpg"
                             className="img-fluid"
                             alt="Imageteam"
                           />
                         </div>
                         <div className="desc">
                           <div className="date"> Sept 08, 2020</div>
-                          <div className="name">Pacific Region Awards</div>
-                          <div className="content">
-                            Make the most of compact spaces with space saving
-                            furniture that are ingenuous and innovative.
+                          <div className="name">
+                            Berger Home Diaries - Fabulous House 1
                           </div>
                         </div>
                         <div className="icon">
-                          <span>Read More</span>
-                        </div>
-                      </Overlay>
-                    </LinkWrap>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-4 slick slicknews p-3 mb-0">
-              <div className="slick-slide d-block">
-                <div className="mr-0">
-                  <div className="itm mr-0">
-                    <LinkWrap active={toCase === "/detailnews"}>
-                      <Overlay
-                        active={!!toCase}
-                        onMouseDown={(e) => setCoords(e.nativeEvent.x)}
-                        onMouseUp={(e) =>
-                          handleCaseSwap(e.nativeEvent, "/detailnews")
-                        }
-                      >
-                        <div className="bg">
-                          <img
-                            src="./img/news/img3.jpg"
-                            className="img-fluid"
-                            alt="Imageteam"
-                          />
-                        </div>
-                        <div className="desc">
-                          <div className="date"> Sept 08, 2020</div>
-                          <div className="name">Pacific Region Awards</div>
-                          <div className="content">
-                            Make the most of compact spaces with space saving
-                            furniture that are ingenuous and innovative.
-                          </div>
-                        </div>
-                        <div className="icon">
-                          <span>Read More</span>
-                        </div>
-                      </Overlay>
-                    </LinkWrap>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-4 slick slicknews p-3 mb-0">
-              <div className="slick-slide d-block">
-                <div className="mr-0">
-                  <div className="itm mr-0">
-                    <LinkWrap active={toCase === "/detailnews"}>
-                      <Overlay
-                        active={!!toCase}
-                        onMouseDown={(e) => setCoords(e.nativeEvent.x)}
-                        onMouseUp={(e) =>
-                          handleCaseSwap(e.nativeEvent, "/detailnews")
-                        }
-                      >
-                        <div className="bg">
-                          <img
-                            src="./img/news/img4.jpg"
-                            className="img-fluid"
-                            alt="Imageteam"
-                          />
-                        </div>
-                        <div className="desc">
-                          <div className="date"> Sept 08, 2020</div>
-                          <div className="name">Pacific Region Awards</div>
-                          <div className="content">
-                            Make the most of compact spaces with space saving
-                            furniture that are ingenuous and innovative.
-                          </div>
-                        </div>
-                        <div className="icon">
-                          <span>Read More</span>
-                        </div>
-                      </Overlay>
-                    </LinkWrap>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-4 slick slicknews p-3 mb-0">
-              <div className="slick-slide d-block">
-                <div className="mr-0">
-                  <div className="itm mr-0">
-                    <LinkWrap active={toCase === "/detailnews"}>
-                      <Overlay
-                        active={!!toCase}
-                        onMouseDown={(e) => setCoords(e.nativeEvent.x)}
-                        onMouseUp={(e) =>
-                          handleCaseSwap(e.nativeEvent, "/detailnews")
-                        }
-                      >
-                        <div className="bg">
-                          <img
-                            src="./img/news/img1.jpg"
-                            className="img-fluid"
-                            alt="Imageteam"
-                          />
-                        </div>
-                        <div className="desc">
-                          <div className="date"> Sept 08, 2020</div>
-                          <div className="name">Pacific Region Awards</div>
-                          <div className="content">
-                            Make the most of compact spaces with space saving
-                            furniture that are ingenuous and innovative.
-                          </div>
-                        </div>
-                        <div className="icon">
-                          <span>Read More</span>
-                        </div>
-                      </Overlay>
-                    </LinkWrap>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-4 slick slicknews p-3 mb-0">
-              <div className="slick-slide d-block">
-                <div className="mr-0">
-                  <div className="itm mr-0">
-                    <LinkWrap active={toCase === "/detailnews"}>
-                      <Overlay
-                        active={!!toCase}
-                        onMouseDown={(e) => setCoords(e.nativeEvent.x)}
-                        onMouseUp={(e) =>
-                          handleCaseSwap(e.nativeEvent, "/detailnews")
-                        }
-                      >
-                        <div className="bg">
-                          <img
-                            src="./img/news/img2.jpg"
-                            className="img-fluid"
-                            alt="Imageteam"
-                          />
-                        </div>
-                        <div className="desc">
-                          <div className="date"> Sept 08, 2020</div>
-                          <div className="name">Pacific Region Awards</div>
-                          <div className="content">
-                            Make the most of compact spaces with space saving
-                            furniture that are ingenuous and innovative.
-                          </div>
-                        </div>
-                        <div className="icon">
-                          <span>Read More</span>
+                          <span>Watch on YouTube</span>
                         </div>
                       </Overlay>
                     </LinkWrap>

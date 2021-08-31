@@ -8,7 +8,7 @@ import { Efect, Efect1, Efect2 } from "../styles/effect.styles"
 const Contact = ({ history }) => {
   const [showMessage, setShowMessage] = useState(false)
   const [showError, setShowError] = useState(false)
-  const { register, handleSubmit } = useForm()
+  const { register, handleSubmit } = useForm("")
 
   async function pd(u = "", d = {}) {
     const r = await fetch(u, {
@@ -22,7 +22,7 @@ const Contact = ({ history }) => {
   }
   async function os(ir) {
     const { n, e, p, m } = ir
-    pd("https://api.nodecandy.com/contact-forms", {
+    pd("http://167.71.205.73/contact-forms", {
       Name: n,
       Email: e,
       Phone: p,

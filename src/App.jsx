@@ -6,10 +6,11 @@ import ScrollToTopBtn from "./components/ScrollToTop"
 import About from "./pages/About"
 import akramalikhanint from "./pages/akramalikhan-int"
 import Contact from "./pages/Contact"
+import detailNews from "./pages/detailNews"
 import emonint from "./pages/emon-int"
 import Home from "./pages/Home"
 import kalamint from "./pages/kalam-int"
-import LandOwners from "./pages/LandOwners"
+import LandWanted from "./pages/LandWanted"
 import mahadinfarahint from "./pages/mahadi&farah-int"
 import marufint from "./pages/maruf-int"
 import mehreenint from "./pages/mehreen-int"
@@ -18,7 +19,6 @@ import Projects from "./pages/Projects"
 import Teams from "./pages/Teams"
 import "./styles/animated-on3step.css"
 import "./styles/main.scss"
-
 function App() {
   const [loading, setLoading] = useState(false)
   const [navBackground, setNavBack] = useState(false)
@@ -57,7 +57,7 @@ function App() {
           <Route path="/Projects" exact component={Projects} />
           <Route path="/News" exact component={News} />
           <Route path="/Teams" exact component={Teams} />
-          <Route path="/LandOwners" exact component={LandOwners} />
+          <Route path="/LandWanted" exact component={LandWanted} />
           <Route path="/Contact" exact component={Contact} />
           <Route path="/kalam-interior" component={kalamint} />
           <Route path="/emon-interior" component={emonint} />
@@ -65,6 +65,7 @@ function App() {
           <Route path="/maruf-interior" component={marufint} />
           <Route path="/mehreen-interior" component={mehreenint} />
           <Route path="/mahadi&farah-interior" component={mahadinfarahint} />
+          <Route path="/detailnews" component={detailNews} />
 
           <ScrollToTopBtn />
         </div>

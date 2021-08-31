@@ -78,12 +78,6 @@ export default class Responsive extends Component {
             </div>
             <div className="desc">
               <div className="name">Architectural Consultancy</div>
-              <div className="content">
-                We Provide Highly Qualified Architectural Consultancy Services
-                To Our Clients Belonging In Different Industries. Our
-                Consultancy Focuses On Many Aspects Which Brings You Best
-                Results.
-              </div>
             </div>
           </CustomSlide>
 
@@ -97,11 +91,6 @@ export default class Responsive extends Component {
             </div>
             <div className="desc">
               <div className="name">Building Development</div>
-              <div className="content">
-                Make the most of compact spaces with space saving furniture that
-                are ingenuous and innovative. Transform your living spaces with
-                interior designs that make optimal use of available space.
-              </div>
             </div>
           </CustomSlide>
 
@@ -115,11 +104,6 @@ export default class Responsive extends Component {
             </div>
             <div className="desc">
               <div className="name">Construction Management</div>
-              <div className="content">
-                Make the most of compact spaces with space saving furniture that
-                are ingenuous and innovative. Transform your living spaces with
-                interior designs that make optimal use of available space.
-              </div>
             </div>
           </CustomSlide>
           <CustomSlide className="itm" index={4}>
@@ -132,11 +116,6 @@ export default class Responsive extends Component {
             </div>
             <div className="desc">
               <div className="name">Interior Design</div>
-              <div className="content">
-                Make the most of compact spaces with space saving furniture that
-                are ingenuous and innovative. Transform your living spaces with
-                interior designs that make optimal use of available space.
-              </div>
             </div>
           </CustomSlide>
           <CustomSlide className="itm" index={4}>
@@ -149,11 +128,6 @@ export default class Responsive extends Component {
             </div>
             <div className="desc">
               <div className="name">Furniture Design</div>
-              <div className="content">
-                Make the most of compact spaces with space saving furniture that
-                are ingenuous and innovative. Transform your living spaces with
-                interior designs that make optimal use of available space.
-              </div>
             </div>
           </CustomSlide>
           <CustomSlide className="itm" index={5}>
@@ -166,11 +140,6 @@ export default class Responsive extends Component {
             </div>
             <div className="desc">
               <div className="name">Landscaping</div>
-              <div className="content">
-                Make the most of compact spaces with space saving furniture that
-                are ingenuous and innovative. Transform your living spaces with
-                interior designs that make optimal use of available space.
-              </div>
             </div>
           </CustomSlide>
         </Slider>

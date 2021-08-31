@@ -7,18 +7,64 @@ import { Efect, Efect1, Efect2 } from "../styles/effect.styles"
 
 const LandOwners = ({ history }) => {
   const [showMessage, setShowMessage] = useState(false)
-
+  const [showError, setShowError] = useState(false)
   const { register, handleSubmit } = useForm()
 
-  const onSubmit = (data) => {
-    setTimeout(() => {
-      setShowMessage(true)
-    }, 1000)
-    setTimeout(() => {
-      setShowMessage(false)
-    }, 5000)
-    console.log(data)
+  async function pd(u = "", d = {}) {
+    const r = await fetch(u, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(d),
+    })
+    return r.json()
   }
+  async function os(ir) {
+    const {
+      locality,
+      address,
+      landsize,
+      roadwidth,
+      landcategory,
+      facing,
+      features,
+      landowner,
+      contact,
+      email,
+      phone,
+    } = ir
+    pd("http://167.71.205.73/land-wanted-forms", {
+      Locality: locality,
+      Address: address,
+      Land_Size: landsize,
+      Width_In_Front: roadwidth,
+      Land_Category: landcategory,
+      Facing: facing,
+      Attractive_Features: features,
+      Land_Owner_Name: landowner,
+      Contact_Person: contact,
+      Email: email,
+      Phone: phone,
+    }).then((d) => {
+      if (d.statusCode === 400) {
+        setTimeout(() => {
+          setShowError(true)
+        }, 1000)
+        setTimeout(() => {
+          setShowError(false)
+        }, 5000)
+      } else {
+        setTimeout(() => {
+          setShowMessage(true)
+        }, 1000)
+        setTimeout(() => {
+          setShowMessage(false)
+        }, 5000)
+      }
+    })
+  }
+
   return (
     <div>
       <Efect />
@@ -30,7 +76,8 @@ const LandOwners = ({ history }) => {
           <div className="row">
             <div className="col-12">
               <h1>
-                Land Wanted<span className="color">?</span>
+                Provide Information About Your{" "}
+                <span className="color">Land</span>
               </h1>
             </div>
           </div>
@@ -41,7 +88,7 @@ const LandOwners = ({ history }) => {
           <div className="row">
             <div className="col-md-12">
               <div className="form-side">
-                <form className="formcontact" onSubmit={handleSubmit(onSubmit)}>
+                <form className="formcontact" onSubmit={handleSubmit(os)}>
                   <section className="container p-2">
                     <div className="row">
                       <div className="col-12">
@@ -86,27 +133,29 @@ const LandOwners = ({ history }) => {
                   />
                   <label>Category of land</label>
                   <select {...register("landcategory", { required: true })}>
-                    <option value="freehold">
+                    <option value="Freehold or didn't choose any">
                       Select Option (Default: Freehold)
                     </option>
-                    <option value="freehold">Freehold</option>
-                    <option value="leasehold">Leasehold</option>
+                    <option value="Freehold">Freehold</option>
+                    <option value="Leasehold">Leasehold</option>
                   </select>
                   <label>Facing</label>
                   <select {...register("facing", { required: true })}>
-                    <option value="east">East (Default)</option>
-                    <option value="west">West</option>
-                    <option value="north">North</option>
-                    <option value="south">South</option>
+                    <option value="East">East (Default)</option>
+                    <option value="West">West</option>
+                    <option value="North">North</option>
+                    <option value="South">South</option>
                   </select>
                   <label>Attractive features (optional)</label>
                   <select {...register("features", { required: true })}>
-                    <option value="none">Select Option (Default: None)</option>
-                    <option value="lakeside">Lakeside</option>
-                    <option value="cornerplot">Corner Plot</option>
-                    <option value="parkview">Park View</option>
-                    <option value="mainroad">Main Road</option>
-                    <option value="others">Others</option>
+                    <option value="None or didn't choose any">
+                      Select Option (Default: None)
+                    </option>
+                    <option value="Lakeside">Lakeside</option>
+                    <option value="Cornerplot">Corner Plot</option>
+                    <option value="Parkview">Park View</option>
+                    <option value="Mainroad">Main Road</option>
+                    <option value="Others">Others</option>
                   </select>
                   <section className="container p-2">
                     <div className="row">
@@ -148,15 +197,11 @@ const LandOwners = ({ history }) => {
                   {showMessage && (
                     <div id="success">Your message has been sent.</div>
                   )}
-                  <div id="failed" className="hide">
-                    Message failed...
-                  </div>
-                  {showMessage && (
-                    <div id="success">Your message has been sent.</div>
+                  {showError && (
+                    <div id="failed">
+                      Message failed, Try entering valid information.
+                    </div>
                   )}
-                  <div id="failed" className="hide">
-                    Message failed...
-                  </div>
                   <button type="submit" id="buttonsent">
                     <span className="shine"></span>
                     <span>Receive a call</span>

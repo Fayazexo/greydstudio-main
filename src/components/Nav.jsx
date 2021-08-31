@@ -46,8 +46,8 @@ const NavigationMenu = ({ history, hasBackground, setBackground }) => {
             setState(false)
             setLink("")
             break
-          case "landowners":
-            history.push("/landowners")
+          case "landwanted":
+            history.push("/landwanted")
             setState(false)
             setLink("")
             break
@@ -138,7 +138,7 @@ const NavigationMenu = ({ history, hasBackground, setBackground }) => {
           <span onClick={() => setLinkHandler("teams")} className="links">
             Our Teams
           </span>
-          <span onClick={() => setLinkHandler("landowners")} className="links">
+          <span onClick={() => setLinkHandler("landwanted")} className="links">
             Land Wanted
           </span>
           <span onClick={() => setLinkHandler("contact")} className="links">
