@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import Reveal from "react-reveal/Reveal"
 import { withRouter } from "react-router-dom"
 import Footer from "../components/Footer"
@@ -6,19 +6,6 @@ import { Efect, Efect1, Efect2 } from "../styles/effect.styles"
 import { LinkWrap, Overlay } from "../styles/Work.styles"
 
 const Events = ({ history }) => {
-  const [toCase, setCase] = useState("")
-  const [coord, setCoords] = useState()
-
-  useEffect(() => {
-    toCase &&
-      setTimeout(() => {
-        history.push(toCase)
-      }, 600)
-  }, [toCase, history])
-
-  const handleCaseSwap = (e, uri) =>
-    e.x < coord + 15 && e.x > coord - 15 && setCase(uri)
-
   return (
     <div>
       <Efect />
@@ -34,7 +21,6 @@ const Events = ({ history }) => {
           </div>
         </section>
       </Reveal>
-
       <Reveal effect="fadeInUp">
         <section className="container-fluid">
           <div className="row m-2-hor">
@@ -42,14 +28,8 @@ const Events = ({ history }) => {
               <div className="slick-slide d-block">
                 <div className="mr-0">
                   <div className="itm mr-0">
-                    <LinkWrap active={toCase === "/detailnews"}>
-                      <Overlay
-                        active={!!toCase}
-                        onMouseDown={(e) => setCoords(e.nativeEvent.x)}
-                        onMouseUp={(e) =>
-                          handleCaseSwap(e.nativeEvent, "/detailnews")
-                        }
-                      >
+                    <LinkWrap>
+                      <Overlay>
                         <div className="bg">
                           <img
                             src="./img/news/news1.jpg"
@@ -64,7 +44,13 @@ const Events = ({ history }) => {
                           </div>
                         </div>
                         <div className="icon">
-                          <span>Watch on YouTube</span>
+                          <span
+                            onClick={() =>
+                              window.open("https://youtu.be/ArBskCj6Vpg")
+                            }
+                          >
+                            Watch on YouTube
+                          </span>
                         </div>
                       </Overlay>
                     </LinkWrap>
@@ -76,14 +62,8 @@ const Events = ({ history }) => {
               <div className="slick-slide d-block">
                 <div className="mr-0">
                   <div className="itm mr-0">
-                    <LinkWrap active={toCase === "/detailnews"}>
-                      <Overlay
-                        active={!!toCase}
-                        onMouseDown={(e) => setCoords(e.nativeEvent.x)}
-                        onMouseUp={(e) =>
-                          handleCaseSwap(e.nativeEvent, "/detailnews")
-                        }
-                      >
+                    <LinkWrap>
+                      <Overlay>
                         <div className="bg">
                           <img
                             src="./img/news/news2.jpg"
@@ -98,7 +78,13 @@ const Events = ({ history }) => {
                           </div>
                         </div>
                         <div className="icon">
-                          <span>Watch on YouTube</span>
+                          <span
+                            onClick={() =>
+                              window.open("https://youtu.be/FyJsKRXnGkM")
+                            }
+                          >
+                            Watch on YouTube
+                          </span>
                         </div>
                       </Overlay>
                     </LinkWrap>
@@ -106,19 +92,12 @@ const Events = ({ history }) => {
                 </div>
               </div>
             </div>
-
             <div className="col-md-4 slick slicknews p-3 mb-0">
               <div className="slick-slide d-block">
                 <div className="mr-0">
                   <div className="itm mr-0">
-                    <LinkWrap active={toCase === "/detailnews"}>
-                      <Overlay
-                        active={!!toCase}
-                        onMouseDown={(e) => setCoords(e.nativeEvent.x)}
-                        onMouseUp={(e) =>
-                          handleCaseSwap(e.nativeEvent, "/detailnews")
-                        }
-                      >
+                    <LinkWrap>
+                      <Overlay>
                         <div className="bg">
                           <img
                             src="./img/news/news3.jpg"
@@ -133,7 +112,13 @@ const Events = ({ history }) => {
                           </div>
                         </div>
                         <div className="icon">
-                          <span>Watch on YouTube</span>
+                          <span
+                            onClick={() =>
+                              window.open("https://youtu.be/mGKykmmdkJc")
+                            }
+                          >
+                            Watch on YouTube
+                          </span>
                         </div>
                       </Overlay>
                     </LinkWrap>
@@ -144,7 +129,6 @@ const Events = ({ history }) => {
           </div>
         </section>
       </Reveal>
-
       <Footer />
     </div>
   )

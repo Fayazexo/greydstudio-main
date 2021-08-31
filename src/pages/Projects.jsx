@@ -89,7 +89,7 @@ const Works = ({ history }) => {
                       >
                         <div className="bg">
                           <img
-                            src="./img/projects/Project-Banner-Emon-Interior.jpg"
+                            src="./img/projects/Project-Banner-Tushar-Residence.jpg"
                             className="img-fluid"
                             alt="Imageworks"
                           />
@@ -191,7 +191,7 @@ const Works = ({ history }) => {
                       >
                         <div className="bg">
                           <img
-                            src="./img/projects/Project-Banner-Mehreen-Interior.jpg"
+                            src="./img/projects/Project-Banner-BIZLI-PLAZA.jpg"
                             className="img-fluid"
                             alt="Imageworks"
                           />

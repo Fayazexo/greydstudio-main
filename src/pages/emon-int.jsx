@@ -91,12 +91,6 @@ class Case extends Component {
                     white combo or pick shades that go well with the rest of
                     your decor
                   </p>
-                  <p className="content">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut. magna aliquam
-                    erat volutpat enim ad minim veniam. Duis autem vel eum
-                    iriure dolor in hendrerit in.
-                  </p>
                 </div>
                 <div className="col-md-4 sticky">
                   <ul className="detailproject">

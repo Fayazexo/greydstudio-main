@@ -78,7 +78,7 @@ const Home = ({ history }) => {
         <section className="container-fluid">
           <div className="row m-2-hor">
             <div className="col-12">
-              <div className="heading">Meet our team</div>
+              <div className="heading">Meet our Team</div>
             </div>
             <div className="col-12">
               <TeamsCor />

@@ -15,14 +15,14 @@ export default () => (
           <span className="content">
             Berger Faboulous Home Awards (Second One)
           </span>
-          <span className="detail">Awards Received</span>
+          <span className="detail">Award Received</span>
         </div>
         <div className="listcomplish">
           <span className="year">2020</span>
           <span className="content">
             Berger Faboulous Home Awards (First One)
           </span>
-          <span className="detail">Awards Received</span>
+          <span className="detail">Award Received</span>
         </div>
 
         <div className="listcomplish">
@@ -32,7 +32,7 @@ export default () => (
         </div>
         <div className="listcomplish">
           <span className="year">2020</span>
-          <span className="content">Project Completed GreenEdge</span>
+          <span className="content">Project GreenEdge Completed</span>
           <span className="detail">Our Signature Housing Project</span>
         </div>
         <div className="listcomplish">
@@ -47,7 +47,7 @@ export default () => (
         </div>
         <div className="listcomplish">
           <span className="year">2013</span>
-          <span className="content">Started Our Journey.</span>
+          <span className="content">Started Our Journey</span>
           <span className="detail">As Consultancy</span>
         </div>
       </div>

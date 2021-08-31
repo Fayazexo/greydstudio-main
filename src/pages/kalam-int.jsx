@@ -91,12 +91,6 @@ class Case extends Component {
                     white combo or pick shades that go well with the rest of
                     your decor
                   </p>
-                  <p className="content">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut. magna aliquam
-                    erat volutpat enim ad minim veniam. Duis autem vel eum
-                    iriure dolor in hendrerit in.
-                  </p>
                 </div>
                 <div className="col-md-4 sticky">
                   <ul className="detailproject">
@@ -118,21 +112,24 @@ class Case extends Component {
                     </li>
                   </ul>
                 </div>
-
-                <div className="single-img max-height400">
-                  <img
-                    src="./img/news/img1.jpg"
-                    className="img-fluid"
-                    alt="Imageteam"
-                  />
-                </div>
                 <div className="col-md-6 p-md-0">
-                  <div className="single-img max-height300 pimg-5">
+                  <div className="single-img max-height400">
                     <img
                       src="./img/news/img1.jpg"
                       className="img-fluid"
                       alt="Imageteam"
                     />
+                  </div>
+                </div>
+                <div className="col-md-6 p-md-0">
+                  <div className="col-md-6 p-md-0">
+                    <div className="single-img max-height300 pimg-5">
+                      <img
+                        src="./img/news/img1.jpg"
+                        className="img-fluid"
+                        alt="Imageteam"
+                      />
+                    </div>
                   </div>
                   <div className="single-img max-height300 pimg-5">
                     <img

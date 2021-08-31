@@ -25,8 +25,8 @@ const content = [
     image: "./img/bg-3.jpg",
   },
   {
-    title: "Land of Residence",
-    description: "According lifestyle",
+    title: "Blend with Simplicity",
+    description: "And Luxury",
     // button: "More Detail",
     // link: "/#",
     image: "./img/bg-4.jpg",
