@@ -118,6 +118,39 @@ class Case extends Component {
                     </li>
                   </ul>
                 </div>
+                <div className="single-img max-height400 pt-4">
+                  <img
+                    src="./img/news/img1.jpg"
+                    className="img-fluid"
+                    alt="Imageteam"
+                  />
+                </div>
+                <div className="col-md-6 p-md-0">
+                  <div className="single-img max-height300 pimg-5">
+                    <img
+                      src="./img/news/img1.jpg"
+                      className="img-fluid"
+                      alt="Imageteam"
+                    />
+                  </div>
+                  <div className="single-img max-height300 pimg-5">
+                    <img
+                      src="./img/news/img4.jpg"
+                      className="img-fluid"
+                      alt="Imageteam"
+                    />
+                  </div>
+                </div>
+                <div className="col-md-6 p-md-0">
+                  <div className="single-img pimg-5">
+                    <img
+                      src="./img/news/img2.jpg"
+                      className="img-fluid"
+                      alt="Imageteam"
+                    />
+                  </div>
+                </div>
+
                 <div className="col-md-12">
                   <div className="tags">
                     <span className="heading">Tags :</span>

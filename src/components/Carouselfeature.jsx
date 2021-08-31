@@ -71,7 +71,7 @@ export default class Responsive extends Component {
           <CustomSlide className="itm" index={1}>
             <div className="bg">
               <img
-                src="./img/feature/img1.jpg"
+                src="./img/feature/architectural-design-consultancy.jpg"
                 className="img-fluid"
                 alt="Imageteam"
               />
@@ -84,7 +84,7 @@ export default class Responsive extends Component {
           <CustomSlide className="itm" index={2}>
             <div className="bg">
               <img
-                src="./img/feature/img2.jpg"
+                src="./img/feature/Building-Development.jpg"
                 className="img-fluid"
                 alt="Imageteam"
               />
@@ -97,7 +97,7 @@ export default class Responsive extends Component {
           <CustomSlide className="itm" index={3}>
             <div className="bg">
               <img
-                src="./img/feature/img3.jpg"
+                src="./img/feature/Construction-Management.jpg"
                 className="img-fluid"
                 alt="Imageteam"
               />
@@ -109,7 +109,7 @@ export default class Responsive extends Component {
           <CustomSlide className="itm" index={4}>
             <div className="bg">
               <img
-                src="./img/feature/img4.jpg"
+                src="./img/feature/Interior-design.jpg"
                 className="img-fluid"
                 alt="Imageteam"
               />
@@ -121,7 +121,7 @@ export default class Responsive extends Component {
           <CustomSlide className="itm" index={4}>
             <div className="bg">
               <img
-                src="./img/feature/img1.jpg"
+                src="./img/feature/Furniture-design.jpg"
                 className="img-fluid"
                 alt="Imageteam"
               />
@@ -133,7 +133,7 @@ export default class Responsive extends Component {
           <CustomSlide className="itm" index={5}>
             <div className="bg">
               <img
-                src="./img/feature/img1.jpg"
+                src="./img/feature/Landscaping.jpg"
                 className="img-fluid"
                 alt="Imageteam"
               />

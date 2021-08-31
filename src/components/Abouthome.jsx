@@ -6,7 +6,11 @@ export default () => (
       <div className="col-md-6 pt-5">
         <div className="col-home">
           <div className="thumb">
-            <img src="./img/home.jpg" className="img-fluid" alt="#" />
+            <img
+              src="./img/Home-page-alone-photo.jpg"
+              className="img-fluid"
+              alt="#"
+            />
           </div>
         </div>
       </div>

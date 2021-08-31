@@ -74,7 +74,7 @@ const LandOwners = ({ history }) => {
       <Reveal effect="fadeInUp">
         <section className="container">
           <div className="row">
-            <div className="col-12">
+            <div className="col-12 center">
               <h1>
                 Provide Information About Your{" "}
                 <span className="color">Land</span>

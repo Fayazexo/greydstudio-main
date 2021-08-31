@@ -38,6 +38,10 @@ $black_more: #090707;
 $color: #89bc19;
 $color_more: #89bc19;
 
+::selection {
+  background-color: #89bc19;
+  color: #ffffff;
+}
 /*general*/
 html {
   overflow-x: hidden;
@@ -88,6 +92,9 @@ section {
 }
 .right {
   text-align: right;
+}
+.center {
+  text-align: center;
 }
 .link {
   cursor: pointer;
