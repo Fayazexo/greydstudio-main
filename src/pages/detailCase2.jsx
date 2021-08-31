@@ -60,7 +60,8 @@ class Case extends Component {
               <Hero
                 className="mainhero"
                 style={{
-                  backgroundImage: "url('./img/projects/big/img3.jpg')",
+                  backgroundImage:
+                    "url('./img/projects/big/Project-Cover-Akram-Ali-Khan-1st-Floor.jpg')",
                 }}
               >
                 <div className="herocaption">

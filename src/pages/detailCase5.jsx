@@ -35,7 +35,7 @@ class Case extends Component {
     if (this.state.toBack) {
       setTimeout(() => {
         this.props.setNavBackground(false)
-        this.props.history.push("/work")
+        this.props.history.push("/projects")
       }, 400)
     }
     if (this.state.animateCase) {
@@ -60,7 +60,8 @@ class Case extends Component {
               <Hero
                 className="mainhero"
                 style={{
-                  backgroundImage: "url('./img/projects/big/img1.jpg')",
+                  backgroundImage:
+                    "url('./img/projects/big/Project-Cover-Mahadi-&-Farah-Interior.jpg')",
                 }}
               >
                 <div className="herocaption">
