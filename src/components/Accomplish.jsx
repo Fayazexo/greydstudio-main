@@ -12,18 +12,13 @@ export default () => (
       <div className="col-12">
         <div className="listcomplish">
           <span className="year">2020</span>
-          <span className="content">Citrus Mood L-Shaped Modular Kitchen</span>
-          <span className="detail">Luxury Modern Home</span>
-        </div>
-        <div className="listcomplish">
-          <span className="year">2020</span>
-          <span className="content">Nature Bliss Straight Modular Kitchen</span>
-          <span className="detail">Kitchen Home</span>
+          <span className="content">50+ Interior Designs</span>
+          <span className="detail">Modern Interior Design </span>
         </div>
         <div className="listcomplish">
           <span className="year">2019</span>
-          <span className="content">Woody Mist Straight Wardrobe Designs</span>
-          <span className="detail">Wardrobe Designs</span>
+          <span className="content">28 Building Designs</span>
+          <span className="detail">Minimalistic Home Designs</span>
         </div>
         <div className="listcomplish">
           <span className="year">2019</span>

@@ -4,15 +4,15 @@ import NavigationMenu from "./components/Nav"
 import Preloader from "./components/Preloader"
 import ScrollToTopBtn from "./components/ScrollToTop"
 import About from "./pages/About"
+import akramalikhanint from "./pages/akramalikhan-int"
 import Contact from "./pages/Contact"
-import detailCase from "./pages/detailCase"
-import detailCase1 from "./pages/detailCase1"
-import detailCase2 from "./pages/detailCase2"
-import detailCase3 from "./pages/detailCase3"
-import detailCase4 from "./pages/detailCase4"
-import detailCase5 from "./pages/detailCase5"
+import emonint from "./pages/emon-int"
 import Home from "./pages/Home"
+import kalamint from "./pages/kalam-int"
 import LandOwners from "./pages/LandOwners"
+import mahadinfarahint from "./pages/mahadi&farah-int"
+import marufint from "./pages/maruf-int"
+import mehreenint from "./pages/mehreen-int"
 import News from "./pages/News"
 import Projects from "./pages/Projects"
 import Teams from "./pages/Teams"
@@ -59,12 +59,12 @@ function App() {
           <Route path="/Teams" exact component={Teams} />
           <Route path="/LandOwners" exact component={LandOwners} />
           <Route path="/Contact" exact component={Contact} />
-          <Route path="/detailcase" component={detailCase} />
-          <Route path="/detailcase1" component={detailCase1} />
-          <Route path="/detailcase2" component={detailCase2} />
-          <Route path="/detailcase3" component={detailCase3} />
-          <Route path="/detailcase4" component={detailCase4} />
-          <Route path="/detailcase5" component={detailCase5} />
+          <Route path="/kalam-interior" component={kalamint} />
+          <Route path="/emon-interior" component={emonint} />
+          <Route path="/akramalikhan-interior" component={akramalikhanint} />
+          <Route path="/maruf-interior" component={marufint} />
+          <Route path="/mehreen-interior" component={mehreenint} />
+          <Route path="/mahadi&farah-interior" component={mahadinfarahint} />
 
           <ScrollToTopBtn />
         </div>

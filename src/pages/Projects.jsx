@@ -46,12 +46,12 @@ const Works = ({ history }) => {
               <div className="slick-slide d-block">
                 <div>
                   <div className="itm">
-                    <LinkWrap active={toCase === "/detailcase"}>
+                    <LinkWrap active={toCase === "/kalam-interior"}>
                       <Overlay
                         active={!!toCase}
                         onMouseDown={(e) => setCoords(e.nativeEvent.x)}
                         onMouseUp={(e) =>
-                          handleCaseSwap(e.nativeEvent, "/detailcase")
+                          handleCaseSwap(e.nativeEvent, "/kalam-interior")
                         }
                       >
                         <div className="bg">
@@ -79,12 +79,12 @@ const Works = ({ history }) => {
               <div className="slick-slide d-block">
                 <div>
                   <div className="itm">
-                    <LinkWrap active={toCase === "/detailcase1"}>
+                    <LinkWrap active={toCase === "/emon-interior"}>
                       <Overlay
                         active={!!toCase}
                         onMouseDown={(e) => setCoords(e.nativeEvent.x)}
                         onMouseUp={(e) =>
-                          handleCaseSwap(e.nativeEvent, "/detailcase1")
+                          handleCaseSwap(e.nativeEvent, "/emon-interior")
                         }
                       >
                         <div className="bg">
@@ -112,12 +112,15 @@ const Works = ({ history }) => {
               <div className="slick-slide d-block">
                 <div>
                   <div className="itm">
-                    <LinkWrap active={toCase === "/detailcase2"}>
+                    <LinkWrap active={toCase === "/akramalikhan-interior"}>
                       <Overlay
                         active={!!toCase}
                         onMouseDown={(e) => setCoords(e.nativeEvent.x)}
                         onMouseUp={(e) =>
-                          handleCaseSwap(e.nativeEvent, "/detailcase2")
+                          handleCaseSwap(
+                            e.nativeEvent,
+                            "/akramalikhan-interior"
+                          )
                         }
                       >
                         <div className="bg">
@@ -145,12 +148,12 @@ const Works = ({ history }) => {
               <div className="slick-slide d-block">
                 <div>
                   <div className="itm">
-                    <LinkWrap active={toCase === "/detailcase3"}>
+                    <LinkWrap active={toCase === "/maruf-interior"}>
                       <Overlay
                         active={!!toCase}
                         onMouseDown={(e) => setCoords(e.nativeEvent.x)}
                         onMouseUp={(e) =>
-                          handleCaseSwap(e.nativeEvent, "/detailcase3")
+                          handleCaseSwap(e.nativeEvent, "/maruf-interior")
                         }
                       >
                         <div className="bg">
@@ -178,12 +181,12 @@ const Works = ({ history }) => {
               <div className="slick-slide d-block">
                 <div>
                   <div className="itm">
-                    <LinkWrap active={toCase === "/detailcase4"}>
+                    <LinkWrap active={toCase === "/mehreen-interior"}>
                       <Overlay
                         active={!!toCase}
                         onMouseDown={(e) => setCoords(e.nativeEvent.x)}
                         onMouseUp={(e) =>
-                          handleCaseSwap(e.nativeEvent, "/detailcase4")
+                          handleCaseSwap(e.nativeEvent, "/mehreen-interior")
                         }
                       >
                         <div className="bg">
@@ -211,12 +214,15 @@ const Works = ({ history }) => {
               <div className="slick-slide d-block">
                 <div>
                   <div className="itm">
-                    <LinkWrap active={toCase === "/detailcase5"}>
+                    <LinkWrap active={toCase === "/mahadi&farah-interior"}>
                       <Overlay
                         active={!!toCase}
                         onMouseDown={(e) => setCoords(e.nativeEvent.x)}
                         onMouseUp={(e) =>
-                          handleCaseSwap(e.nativeEvent, "/detailcase5")
+                          handleCaseSwap(
+                            e.nativeEvent,
+                            "/mahadi&farah-interior"
+                          )
                         }
                       >
                         <div className="bg">

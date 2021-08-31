@@ -81,7 +81,7 @@ export default class Responsive extends Component {
               <div className="name">Kalam</div>
             </div>
             <div className="icon">
-              <span onClick={() => window.open("#", "_self")}>
+              <span onClick={() => window.open(`/kalam-interior`, "_self")}>
                 View Project
               </span>
             </div>
@@ -100,7 +100,7 @@ export default class Responsive extends Component {
               <div className="name">Emon</div>
             </div>
             <div className="icon">
-              <span onClick={() => window.open("#", "_self")}>
+              <span onClick={() => window.open("/emon-interior", "_self")}>
                 View Project
               </span>
             </div>
@@ -119,7 +119,9 @@ export default class Responsive extends Component {
               <div className="name">Akram Ali Khan 1st Floor</div>
             </div>
             <div className="icon">
-              <span onClick={() => window.open("#", "_self")}>
+              <span
+                onClick={() => window.open("/akramalikhan-interior", "_self")}
+              >
                 View Project
               </span>
             </div>
@@ -138,7 +140,47 @@ export default class Responsive extends Component {
               <div className="name">Maruf</div>
             </div>
             <div className="icon">
-              <span onClick={() => window.open("#", "_self")}>
+              <span onClick={() => window.open("/maruf-interior", "_self")}>
+                View Project
+              </span>
+            </div>
+          </CustomSlide>
+
+          <CustomSlide className="itm" index={5}>
+            <div className="bg">
+              <img
+                src="./img/projects/Project-Banner-Maruf-Interior.jpg"
+                className="img-fluid"
+                alt="Imageteam"
+              />
+            </div>
+            <div className="desc">
+              <div className="tag">Interior</div>
+              <div className="name">Mehreen</div>
+            </div>
+            <div className="icon">
+              <span onClick={() => window.open("/mehreen-interior", "_self")}>
+                View Project
+              </span>
+            </div>
+          </CustomSlide>
+
+          <CustomSlide className="itm" index={6}>
+            <div className="bg">
+              <img
+                src="./img/projects/Project-Banner-Maruf-Interior.jpg"
+                className="img-fluid"
+                alt="Imageteam"
+              />
+            </div>
+            <div className="desc">
+              <div className="tag">Interior</div>
+              <div className="name">Mahadi & Farah</div>
+            </div>
+            <div className="icon">
+              <span
+                onClick={() => window.open("/mahadi&farah-interior", "_self")}
+              >
                 View Project
               </span>
             </div>

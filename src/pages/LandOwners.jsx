@@ -24,94 +24,133 @@ const LandOwners = ({ history }) => {
       <Efect />
       <Efect1 />
       <Efect2 />
-
       <div className="jumbotron head" />
-
       <Reveal effect="fadeInUp">
         <section className="container">
           <div className="row">
             <div className="col-12">
               <h1>
-                Get in touch with us to design <br />
-                your <span className="color">dream</span> home
+                Land Wanted<span className="color">?</span>
               </h1>
             </div>
           </div>
         </section>
       </Reveal>
-
       <Reveal effect="fadeInUp">
         <section className="container pt-0">
           <div className="row">
-            <div className="col-md-6">
-              <div className="text-side">
-                <h3 className="heading">Talk with our expert designers </h3>
-                <p>
-                  Vestibulum volutpat, lacus a ultrices sagittis, mi neque
-                  euismod dui, eu pulvinar nunc sapien ornare nisl. <br />
-                  Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed,
-                  urna.
-                </p>
-                <div className="address">
-                  <div className="heading">Our Office</div>
-                  <div className="list">
-                    <i className="fa fa-map-marker"></i>
-                    House 44/i, Flat A1, Road 4, Block D Bashundhara R/A, Dhaka
-                    1229.
-                  </div>
-                  <div className="list">
-                    <i className="fa fa-envelope-o"></i>
-                    <a
-                      href="mailto:contact_info@homekins.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      info@greydstudio.net
-                    </a>
-                  </div>
-                  <div className="list">
-                    <i className="fa fa-phone"></i>
-                    +880 19 8935 9890
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-6">
+            <div className="col-md-12">
               <div className="form-side">
                 <form className="formcontact" onSubmit={handleSubmit(onSubmit)}>
-                  <label>Name</label>
+                  <section className="container p-2">
+                    <div className="row">
+                      <div className="col-12">
+                        <h3>Land Information</h3>
+                      </div>
+                    </div>
+                  </section>
+                  <label>Locality</label>
                   <input
-                    placeholder="Enter your name"
+                    placeholder="Area/neighbourhood the land is located"
                     type="text"
-                    name="name"
-                    {...register("Name", { required: true })}
+                    name="locality"
+                    {...register("locality", { required: true })}
                   />
-                  <label>Email</label>
+                  <label>Address</label>
                   <input
-                    placeholder="Enter your email address"
-                    type="email"
-                    name="email"
-                    {...register("Email", {
+                    placeholder="Full address of the land"
+                    type="text"
+                    name="address"
+                    {...register("address", {
                       required: true,
                     })}
                   />
-                  <label>Phone</label>
+                  <label>Size of the Land</label>
                   <input
-                    placeholder="Enter your phone number"
-                    type="phone"
-                    name="phone"
-                    {...register("Mobile Number", {
+                    placeholder="Size of the land in kathas (rounded)"
+                    type="text"
+                    name="landsize"
+                    {...register("landsize", {
                       required: true,
                     })}
                   />
-                  <label>Message</label>
-                  <textarea
-                    placeholder="Enter your message"
-                    name="message"
+                  <label>Width of the road in front</label>
+                  <input
+                    type="text"
+                    placeholder="In feet"
+                    name="roadwidth"
                     required
-                    {...register("Message")}
+                    {...register("roadwidth", {
+                      required: true,
+                    })}
                   />
+                  <label>Category of land</label>
+                  <select {...register("landcategory", { required: true })}>
+                    <option value="freehold">
+                      Select Option (Default: Freehold)
+                    </option>
+                    <option value="freehold">Freehold</option>
+                    <option value="leasehold">Leasehold</option>
+                  </select>
+                  <label>Facing</label>
+                  <select {...register("facing", { required: true })}>
+                    <option value="east">East (Default)</option>
+                    <option value="west">West</option>
+                    <option value="north">North</option>
+                    <option value="south">South</option>
+                  </select>
+                  <label>Attractive features (optional)</label>
+                  <select {...register("features", { required: true })}>
+                    <option value="none">Select Option (Default: None)</option>
+                    <option value="lakeside">Lakeside</option>
+                    <option value="cornerplot">Corner Plot</option>
+                    <option value="parkview">Park View</option>
+                    <option value="mainroad">Main Road</option>
+                    <option value="others">Others</option>
+                  </select>
+                  <section className="container p-2">
+                    <div className="row">
+                      <div className="col-12">
+                        <h3>Land Owner's Profile</h3>
+                      </div>
+                    </div>
+                  </section>
+                  <label>Name of the Landowner</label>
+                  <input
+                    placeholder="Full name of the registered landowner"
+                    type="text"
+                    name="landowner"
+                    required
+                    {...register("landowner", { required: true })}
+                  />
+                  <label>Contact Person</label>
+                  <input
+                    placeholder="Name (If different from the landowner)"
+                    type="text"
+                    name="contact"
+                    {...register("contact")}
+                  />
+                  <label>Email ID</label>
+                  <input
+                    placeholder="Contact person's email address"
+                    type="text"
+                    name="email"
+                    {...register("email")}
+                  />
+                  <label>Contact Number</label>
+                  <input
+                    placeholder="Contact person's number"
+                    type="text"
+                    name="phone"
+                    required
+                    {...register("phone", { required: true })}
+                  />
+                  {showMessage && (
+                    <div id="success">Your message has been sent.</div>
+                  )}
+                  <div id="failed" className="hide">
+                    Message failed...
+                  </div>
                   {showMessage && (
                     <div id="success">Your message has been sent.</div>
                   )}
@@ -120,7 +159,7 @@ const LandOwners = ({ history }) => {
                   </div>
                   <button type="submit" id="buttonsent">
                     <span className="shine"></span>
-                    <span>Send</span>
+                    <span>Receive a call</span>
                   </button>
                 </form>
               </div>

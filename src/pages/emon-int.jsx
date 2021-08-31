@@ -34,14 +34,11 @@ class Case extends Component {
   componentDidUpdate() {
     if (this.state.toBack) {
       setTimeout(() => {
-        this.props.setNavBackground(false)
         this.props.history.push("/projects")
       }, 400)
     }
     if (this.state.animateCase) {
       setTimeout(() => {
-        this.props.setNavBackground(false)
-
         this.props.history.push(this.state.animateCase)
         window.scrollTo(0, 0)
       }, 400)
@@ -76,14 +73,9 @@ class Case extends Component {
                     <BackArrow src="./img/back.png" alt="Back to Projects" />
                     <span>Back </span>
                   </BackButton>
-                  <ClientTag>Furniture</ClientTag>
-                  <Title>Mounted Unit</Title>
-                  <TechniqueTitle>
-                    We bring you creative home design products that work
-                    together beautifully to form inspired living spaces. Get
-                    thoughtful home interior design elements that add real and
-                    lasting value to your interiors!
-                  </TechniqueTitle>
+                  <ClientTag>INTERIOR</ClientTag>
+                  <Title>Emon</Title>
+                  <TechniqueTitle></TechniqueTitle>
                 </div>
               </Hero>
             </Reveal>
@@ -114,15 +106,15 @@ class Case extends Component {
                     </li>
                     <li>
                       <span className="tile">Client:</span>
-                      <span>Homekins Design</span>
+                      <span>Emon</span>
                     </li>
                     <li>
                       <span className="tile">Completed:</span>
-                      <span>Sept 30, 2020</span>
+                      <span>Ongoing</span>
                     </li>
                     <li>
                       <span className="tile">Project type:</span>
-                      <span>Home Decoration</span>
+                      <span>Interior Design</span>
                     </li>
                   </ul>
                 </div>
