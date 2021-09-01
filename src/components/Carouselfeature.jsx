@@ -24,7 +24,7 @@ export default class Responsive extends Component {
         {
           breakpoint: 5000,
           settings: {
-            slidesToShow: 4,
+            slidesToShow: 3,
             slidesToScroll: 1,
             infinite: false,
             dots: false,
@@ -79,6 +79,14 @@ export default class Responsive extends Component {
             <div className="desc">
               <div className="name">Architectural Consultancy</div>
             </div>
+            <div className="flexxxo">
+              <button type="button" class="btn btn-light color">
+                Ongoing
+              </button>
+              <button type="button" class="btn btn-light color">
+                Completed
+              </button>
+            </div>
           </CustomSlide>
 
           <CustomSlide className="itm" index={2}>
@@ -91,6 +99,14 @@ export default class Responsive extends Component {
             </div>
             <div className="desc">
               <div className="name">Building Development</div>
+            </div>
+            <div className="flexxxo">
+              <button type="button" class="btn btn-light color">
+                Residential
+              </button>
+              <button type="button" class="btn btn-light color">
+                Commercial
+              </button>
             </div>
           </CustomSlide>
 
@@ -105,7 +121,17 @@ export default class Responsive extends Component {
             <div className="desc">
               <div className="name">Construction Management</div>
             </div>
+            <div className="flexxxo">
+              <button type="button" class="btn btn-light color">
+                Ongoing
+              </button>
+              <button type="button" class="btn btn-light color">
+                Completed
+              </button>
+            </div>
           </CustomSlide>
+        </Slider>
+        <Slider {...settings}>
           <CustomSlide className="itm" index={4}>
             <div className="bg">
               <img
@@ -116,6 +142,14 @@ export default class Responsive extends Component {
             </div>
             <div className="desc">
               <div className="name">Interior Design</div>
+            </div>
+            <div className="flexxxo">
+              <button type="button" class="btn btn-light color">
+                Residential
+              </button>
+              <button type="button" class="btn btn-light color">
+                Commercial
+              </button>
             </div>
           </CustomSlide>
           <CustomSlide className="itm" index={4}>
@@ -129,6 +163,14 @@ export default class Responsive extends Component {
             <div className="desc">
               <div className="name">Furniture Design</div>
             </div>
+            <div className="flexxxo">
+              <button type="button" class="btn btn-light color">
+                Home
+              </button>
+              <button type="button" class="btn btn-light color">
+                Office
+              </button>
+            </div>
           </CustomSlide>
           <CustomSlide className="itm" index={5}>
             <div className="bg">
@@ -140,6 +182,14 @@ export default class Responsive extends Component {
             </div>
             <div className="desc">
               <div className="name">Landscaping</div>
+            </div>
+            <div className="flexxxo">
+              <button type="button" class="btn btn-light color">
+                Ongoing
+              </button>
+              <button type="button" class="btn btn-light color">
+                Completed
+              </button>
             </div>
           </CustomSlide>
         </Slider>

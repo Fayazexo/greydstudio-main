@@ -93,6 +93,24 @@ export default () => (
               <i className="fa fa-instagram"></i>
             </div>
           </div>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Type your email..."
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <div class="input-group-append">
+              <button
+                class="btn btn-outline-secondary color"
+                type="button"
+                id="button-addon2"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

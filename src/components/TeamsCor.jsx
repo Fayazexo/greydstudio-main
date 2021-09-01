@@ -85,7 +85,7 @@ export default class Responsive extends Component {
                 alt="Imageteam"
               />
             </div>
-            <div className="desc">
+            <div className="descc">
               <div className="name">
                 Rahmatul Aziz
                 <div className="title">
@@ -105,7 +105,7 @@ export default class Responsive extends Component {
                 alt="Imageteam"
               />
             </div>
-            <div className="desc">
+            <div className="descc">
               <div className="name">
                 Khandoker Arif Ahmad
                 <div className="title">
@@ -123,7 +123,7 @@ export default class Responsive extends Component {
                 alt="Imageteam"
               />
             </div>
-            <div className="desc">
+            <div className="descc">
               <div className="name">
                 Muhitul Al Kaisar
                 <div className="title">
@@ -141,7 +141,7 @@ export default class Responsive extends Component {
                 alt="Imageteam"
               />
             </div>
-            <div className="desc">
+            <div className="descc">
               <div className="name">
                 Muksitul.M Tanim Hasan
                 <div className="title">
@@ -161,7 +161,7 @@ export default class Responsive extends Component {
                 alt="Imageteam"
               />
             </div>
-            <div className="desc">
+            <div className="desccc">
               <div className="name">Exterior</div>
               <div className="title">
                 <span className="color">Co-Founder</span>
@@ -181,7 +181,7 @@ export default class Responsive extends Component {
                 alt="Imageteam"
               />
             </div>
-            <div className="desc">
+            <div className="desccc">
               <div className="name">Exterior</div>
               <div className="title">
                 <span className="color">Co-Founder</span>
@@ -201,7 +201,7 @@ export default class Responsive extends Component {
                 alt="Imageteam"
               />
             </div>
-            <div className="desc">
+            <div className="desccc">
               <div className="name">Exterior</div>
               <div className="title">
                 <span className="color">Co-Founder</span>
