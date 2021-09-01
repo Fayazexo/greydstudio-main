@@ -93,7 +93,7 @@ class Case extends Component {
                   </p>
                 </div>
                 <div className="col-md-4 sticky">
-                  <ul className="detailproject">
+                  <ul className="detailproject pb-4">
                     <li>
                       <span className="tile">Categories:</span>
                       <span>Exteriors</span>
@@ -112,24 +112,10 @@ class Case extends Component {
                     </li>
                   </ul>
                 </div>
-                <div className="single-img max-height400 pt-4">
-                  <img
-                    src="./img/news/img1.jpg"
-                    className="img-fluid"
-                    alt="Imageteam"
-                  />
-                </div>
                 <div className="col-md-6 p-md-0">
-                  <div className="single-img max-height300 pimg-5">
+                  <div className="single-img pimg-5">
                     <img
-                      src="./img/news/img1.jpg"
-                      className="img-fluid"
-                      alt="Imageteam"
-                    />
-                  </div>
-                  <div className="single-img max-height300 pimg-5">
-                    <img
-                      src="./img/news/img4.jpg"
+                      src="./img/projects/Bizli/Bizli-1.jpg"
                       className="img-fluid"
                       alt="Imageteam"
                     />
@@ -138,7 +124,43 @@ class Case extends Component {
                 <div className="col-md-6 p-md-0">
                   <div className="single-img pimg-5">
                     <img
-                      src="./img/news/img2.jpg"
+                      src="./img/projects/Bizli/Bizli-2.jpg"
+                      className="img-fluid"
+                      alt="Imageteam"
+                    />
+                  </div>
+                </div>
+                <div className="col-md-6 p-md-0">
+                  <div className="single-img pimg-5">
+                    <img
+                      src="./img/projects/Bizli/Bizli-3.jpg"
+                      className="img-fluid"
+                      alt="Imageteam"
+                    />
+                  </div>
+                </div>
+                <div className="col-md-6 p-md-0">
+                  <div className="single-img pimg-5">
+                    <img
+                      src="./img/projects/Bizli/Bizli-4.jpg"
+                      className="img-fluid"
+                      alt="Imageteam"
+                    />
+                  </div>
+                </div>
+                <div className="col-md-6 p-md-0">
+                  <div className="single-img pimg-5">
+                    <img
+                      src="./img/projects/Bizli/Bizli-5.jpg"
+                      className="img-fluid"
+                      alt="Imageteam"
+                    />
+                  </div>
+                </div>
+                <div className="col-md-6 p-md-0">
+                  <div className="single-img pimg-5">
+                    <img
+                      src="./img/projects/Bizli/Bizli-6.jpg"
                       className="img-fluid"
                       alt="Imageteam"
                     />
@@ -157,13 +179,14 @@ class Case extends Component {
                   <div className="share">
                     <span className="heading">Share :</span>
                     <span className="content">
-                      <i className="fa fa-facebook-f"></i>
-                    </span>
-                    <span className="content">
-                      <i className="fa fa-twitter"></i>
-                    </span>
-                    <span className="content">
-                      <i className="fa  fa-instagram"></i>
+                      <i
+                        onClick={() =>
+                          window.open(
+                            "https://www.facebook.com/share.php?u=https://www.greydstudio.net/bizli-plaza"
+                          )
+                        }
+                        className="fa fa-facebook-f"
+                      ></i>
                     </span>
                   </div>
                 </div>

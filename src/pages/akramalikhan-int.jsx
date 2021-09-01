@@ -12,7 +12,6 @@ import {
   Title,
 } from "../styles/Case.styles"
 import { Efectr, Efectr1, Efectr2 } from "../styles/effect.styles"
-
 export const ScrollTop = ({ children, location }) => {
   React.useEffect(() => window.scrollTo(0, 0), [location])
   return children
@@ -93,7 +92,7 @@ class Case extends Component {
                   </p>
                 </div>
                 <div className="col-md-4 sticky">
-                  <ul className="detailproject">
+                  <ul className="detailproject pb-4">
                     <li>
                       <span className="tile">Categories:</span>
                       <span>Interiors</span>
@@ -112,24 +111,10 @@ class Case extends Component {
                     </li>
                   </ul>
                 </div>
-                <div className="single-img max-height400 pt-4">
-                  <img
-                    src="./img/news/img1.jpg"
-                    className="img-fluid"
-                    alt="Imageteam"
-                  />
-                </div>
                 <div className="col-md-6 p-md-0">
-                  <div className="single-img max-height300 pimg-5">
+                  <div className="single-img pimg-5">
                     <img
-                      src="./img/news/img1.jpg"
-                      className="img-fluid"
-                      alt="Imageteam"
-                    />
-                  </div>
-                  <div className="single-img max-height300 pimg-5">
-                    <img
-                      src="./img/news/img4.jpg"
+                      src="./img/projects/Akram/Akram-1.jpg"
                       className="img-fluid"
                       alt="Imageteam"
                     />
@@ -138,13 +123,50 @@ class Case extends Component {
                 <div className="col-md-6 p-md-0">
                   <div className="single-img pimg-5">
                     <img
-                      src="./img/news/img2.jpg"
+                      src="./img/projects/Akram/Akram-2.jpg"
                       className="img-fluid"
                       alt="Imageteam"
                     />
                   </div>
                 </div>
-                <div className="col-md-12">
+                <div className="col-md-6 p-md-0">
+                  <div className="single-img pimg-5">
+                    <img
+                      src="./img/projects/Akram/Akram-3.jpg"
+                      className="img-fluid"
+                      alt="Imageteam"
+                    />
+                  </div>
+                </div>
+                <div className="col-md-6 p-md-0">
+                  <div className="single-img pimg-5">
+                    <img
+                      src="./img/projects/Akram/Akram-4.jpg"
+                      className="img-fluid"
+                      alt="Imageteam"
+                    />
+                  </div>
+                </div>
+                <div className="col-md-6 p-md-0">
+                  <div className="single-img pimg-5">
+                    <img
+                      src="./img/projects/Akram/Akram-5.jpg"
+                      className="img-fluid"
+                      alt="Imageteam"
+                    />
+                  </div>
+                </div>
+                <div className="col-md-6 p-md-0">
+                  <div className="single-img pimg-5">
+                    <img
+                      src="./img/projects/Akram/Akram-6.jpg"
+                      className="img-fluid"
+                      alt="Imageteam"
+                    />
+                  </div>
+                </div>
+
+                <div className="col-md-12 pt-4">
                   <div className="tags">
                     <span className="heading">Tags :</span>
                     <span className="content">Inspiration</span>
@@ -157,13 +179,14 @@ class Case extends Component {
                   <div className="share">
                     <span className="heading">Share :</span>
                     <span className="content">
-                      <i className="fa fa-facebook-f"></i>
-                    </span>
-                    <span className="content">
-                      <i className="fa fa-twitter"></i>
-                    </span>
-                    <span className="content">
-                      <i className="fa  fa-instagram"></i>
+                      <i
+                        onClick={() =>
+                          window.open(
+                            "https://www.facebook.com/share.php?u=https://www.greydstudio.net/akramalikhan-interior"
+                          )
+                        }
+                        className="fa fa-facebook-f"
+                      ></i>
                     </span>
                   </div>
                 </div>
