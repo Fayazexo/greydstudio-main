@@ -185,7 +185,7 @@ const NavigationMenu = ({ history, hasBackground, setBackground }) => {
             <Page
               className="mainBtn"
               variant="about"
-              onClick={() => setLinkHandler("News")}
+              onClick={() => setLinkHandler("news")}
             >
               <LinkTag>News</LinkTag>
             </Page>
@@ -199,16 +199,16 @@ const NavigationMenu = ({ history, hasBackground, setBackground }) => {
             <Page
               className="mainBtn"
               variant="about"
-              onClick={() => setLinkHandler("landowners")}
+              onClick={() => setLinkHandler("landwanted")}
             >
-              <LinkTag>Land Owners</LinkTag>
+              <LinkTag>Land Wanted</LinkTag>
             </Page>
             <Page
               className="mainBtn"
               variant="about"
               onClick={() => setLinkHandler("contact")}
             >
-              <LinkTag>Contact</LinkTag>
+              <LinkTag>Contact Us</LinkTag>
             </Page>
           </div>
 

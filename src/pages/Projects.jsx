@@ -46,72 +46,6 @@ const Works = ({ history }) => {
               <div className="slick-slide d-block">
                 <div>
                   <div className="itm">
-                    <LinkWrap active={toCase === "/kalam-interior"}>
-                      <Overlay
-                        active={!!toCase}
-                        onMouseDown={(e) => setCoords(e.nativeEvent.x)}
-                        onMouseUp={(e) =>
-                          handleCaseSwap(e.nativeEvent, "/kalam-interior")
-                        }
-                      >
-                        <div className="bg">
-                          <img
-                            src="./img/projects/Project-Banner-Kalam-Interior.jpg"
-                            className="img-fluid"
-                            alt="Imageworks"
-                          />
-                        </div>
-                        <div className="desc">
-                          <div className="tag">Interior</div>
-                          <div className="name">Kalam</div>
-                        </div>
-                        <div className="icon">
-                          <span>View Project</span>
-                        </div>
-                      </Overlay>
-                    </LinkWrap>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-4 slick slickproject p-3">
-              <div className="slick-slide d-block">
-                <div>
-                  <div className="itm">
-                    <LinkWrap active={toCase === "/emon-interior"}>
-                      <Overlay
-                        active={!!toCase}
-                        onMouseDown={(e) => setCoords(e.nativeEvent.x)}
-                        onMouseUp={(e) =>
-                          handleCaseSwap(e.nativeEvent, "/emon-interior")
-                        }
-                      >
-                        <div className="bg">
-                          <img
-                            src="./img/projects/Project-Banner-Tushar-Residence.jpg"
-                            className="img-fluid"
-                            alt="Imageworks"
-                          />
-                        </div>
-                        <div className="desc">
-                          <div className="tag">Interior</div>
-                          <div className="name">Emon</div>
-                        </div>
-                        <div className="icon">
-                          <span>View Project</span>
-                        </div>
-                      </Overlay>
-                    </LinkWrap>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-4 slick slickproject p-3">
-              <div className="slick-slide d-block">
-                <div>
-                  <div className="itm">
                     <LinkWrap active={toCase === "/akramalikhan-interior"}>
                       <Overlay
                         active={!!toCase}
@@ -133,6 +67,72 @@ const Works = ({ history }) => {
                         <div className="desc">
                           <div className="tag">Interior</div>
                           <div className="name">Akram Ali Khan 1st Floor</div>
+                        </div>
+                        <div className="icon">
+                          <span>View Project</span>
+                        </div>
+                      </Overlay>
+                    </LinkWrap>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-4 slick slickproject p-3">
+              <div className="slick-slide d-block">
+                <div>
+                  <div className="itm">
+                    <LinkWrap active={toCase === "/tushar-residence"}>
+                      <Overlay
+                        active={!!toCase}
+                        onMouseDown={(e) => setCoords(e.nativeEvent.x)}
+                        onMouseUp={(e) =>
+                          handleCaseSwap(e.nativeEvent, "/tushar-residence")
+                        }
+                      >
+                        <div className="bg">
+                          <img
+                            src="./img/projects/Project-Banner-Tushar-Residence.jpg"
+                            className="img-fluid"
+                            alt="Imageworks"
+                          />
+                        </div>
+                        <div className="desc">
+                          <div className="tag">Exterior</div>
+                          <div className="name">Tushar Residence</div>
+                        </div>
+                        <div className="icon">
+                          <span>View Project</span>
+                        </div>
+                      </Overlay>
+                    </LinkWrap>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-4 slick slickproject p-3">
+              <div className="slick-slide d-block">
+                <div>
+                  <div className="itm">
+                    <LinkWrap active={toCase === "/kalam-interior"}>
+                      <Overlay
+                        active={!!toCase}
+                        onMouseDown={(e) => setCoords(e.nativeEvent.x)}
+                        onMouseUp={(e) =>
+                          handleCaseSwap(e.nativeEvent, "/kalam-interior")
+                        }
+                      >
+                        <div className="bg">
+                          <img
+                            src="./img/projects/Project-Banner-Kalam-Interior.jpg"
+                            className="img-fluid"
+                            alt="Imageworks"
+                          />
+                        </div>
+                        <div className="desc">
+                          <div className="tag">Interior</div>
+                          <div className="name">Kalam</div>
                         </div>
                         <div className="icon">
                           <span>View Project</span>
@@ -181,12 +181,12 @@ const Works = ({ history }) => {
               <div className="slick-slide d-block">
                 <div>
                   <div className="itm">
-                    <LinkWrap active={toCase === "/mehreen-interior"}>
+                    <LinkWrap active={toCase === "/bizli-plaza"}>
                       <Overlay
                         active={!!toCase}
                         onMouseDown={(e) => setCoords(e.nativeEvent.x)}
                         onMouseUp={(e) =>
-                          handleCaseSwap(e.nativeEvent, "/mehreen-interior")
+                          handleCaseSwap(e.nativeEvent, "/bizli-plaza")
                         }
                       >
                         <div className="bg">
@@ -197,8 +197,8 @@ const Works = ({ history }) => {
                           />
                         </div>
                         <div className="desc">
-                          <div className="tag">Interior</div>
-                          <div className="name">Mehreen</div>
+                          <div className="tag">Exterior</div>
+                          <div className="name">Bizli Plaza</div>
                         </div>
                         <div className="icon">
                           <span>View Project</span>

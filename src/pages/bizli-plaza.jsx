@@ -58,7 +58,7 @@ class Case extends Component {
                 className="mainhero"
                 style={{
                   backgroundImage:
-                    "url('./img/projects/big/Project-Cover-Mehreen-Interior.jpg')",
+                    "url('./img/projects/big/Project-Cover-bIZLI-PLAZA.jpg')",
                 }}
               >
                 <div className="herocaption">
@@ -73,8 +73,8 @@ class Case extends Component {
                     <BackArrow src="./img/back.png" alt="Back to Projects" />
                     <span>Back </span>
                   </BackButton>
-                  <ClientTag>INTERIOR</ClientTag>
-                  <Title>Mehreen</Title>
+                  <ClientTag>EXTERIOR</ClientTag>
+                  <Title>Bizli Plaza</Title>
                   <TechniqueTitle></TechniqueTitle>
                 </div>
               </Hero>
@@ -96,11 +96,11 @@ class Case extends Component {
                   <ul className="detailproject">
                     <li>
                       <span className="tile">Categories:</span>
-                      <span>Interiors</span>
+                      <span>Exteriors</span>
                     </li>
                     <li>
                       <span className="tile">Client:</span>
-                      <span>Mehreen</span>
+                      <span>Bizli Plaza</span>
                     </li>
                     <li>
                       <span className="tile">Completed:</span>
@@ -108,7 +108,7 @@ class Case extends Component {
                     </li>
                     <li>
                       <span className="tile">Project type:</span>
-                      <span>Interior Design</span>
+                      <span>Exterior Design</span>
                     </li>
                   </ul>
                 </div>

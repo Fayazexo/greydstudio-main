@@ -5,18 +5,18 @@ import Preloader from "./components/Preloader"
 import ScrollToTopBtn from "./components/ScrollToTop"
 import About from "./pages/About"
 import akramalikhanint from "./pages/akramalikhan-int"
+import bizliPlaza from "./pages/bizli-plaza"
 import Contact from "./pages/Contact"
 import detailNews from "./pages/detailNews"
-import emonint from "./pages/emon-int"
 import Home from "./pages/Home"
 import kalamint from "./pages/kalam-int"
 import LandWanted from "./pages/LandWanted"
 import mahadinfarahint from "./pages/mahadi&farah-int"
 import marufint from "./pages/maruf-int"
-import mehreenint from "./pages/mehreen-int"
 import News from "./pages/News"
 import Projects from "./pages/Projects"
 import Teams from "./pages/Teams"
+import tusharResidence from "./pages/tushar-residence"
 import "./styles/animated-on3step.css"
 import "./styles/main.scss"
 function App() {
@@ -60,10 +60,10 @@ function App() {
           <Route path="/LandWanted" exact component={LandWanted} />
           <Route path="/Contact" exact component={Contact} />
           <Route path="/kalam-interior" component={kalamint} />
-          <Route path="/emon-interior" component={emonint} />
+          <Route path="/tushar-residence" component={tusharResidence} />
           <Route path="/akramalikhan-interior" component={akramalikhanint} />
           <Route path="/maruf-interior" component={marufint} />
-          <Route path="/mehreen-interior" component={mehreenint} />
+          <Route path="/bizli-plaza" component={bizliPlaza} />
           <Route path="/mahadi&farah-interior" component={mahadinfarahint} />
           <Route path="/detailnews" component={detailNews} />
 

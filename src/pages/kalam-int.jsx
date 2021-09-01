@@ -112,42 +112,18 @@ class Case extends Component {
                     </li>
                   </ul>
                 </div>
-                <div className="col-md-6 p-md-0">
-                  <div className="single-img max-height400">
-                    <img
-                      src="./img/news/img1.jpg"
-                      className="img-fluid"
-                      alt="Imageteam"
-                    />
-                  </div>
-                </div>
-                <div className="col-md-6 p-md-0">
-                  <div className="col-md-6 p-md-0">
-                    <div className="single-img max-height300 pimg-5">
-                      <img
-                        src="./img/news/img1.jpg"
-                        className="img-fluid"
-                        alt="Imageteam"
-                      />
+                <Reveal effect="fadeInUp">
+                  <section className="container-fluid">
+                    <div className="row m-2-hor">
+                      <div className="col-12">
+                        <div className="heading">What we have expertise on</div>
+                      </div>
+                      <div className="col-12">
+                        <kalamgallery />
+                      </div>
                     </div>
-                  </div>
-                  <div className="single-img max-height300 pimg-5">
-                    <img
-                      src="./img/news/img4.jpg"
-                      className="img-fluid"
-                      alt="Imageteam"
-                    />
-                  </div>
-                </div>
-                <div className="col-md-6 p-md-0">
-                  <div className="single-img pimg-5">
-                    <img
-                      src="./img/news/img2.jpg"
-                      className="img-fluid"
-                      alt="Imageteam"
-                    />
-                  </div>
-                </div>
+                  </section>
+                </Reveal>
                 <div className="col-md-12">
                   <div className="tags">
                     <span className="heading">Tags :</span>
