@@ -2,7 +2,7 @@ import React from "react"
 export default () => (
   <footer className="container-fluid black_more">
     <div className="bg-footer">
-      <img src="./img/footer-img.png" alt="bg-footer" />
+      <img src="./img/footer-img.jpg" alt="bg-footer" />
     </div>
     <div className="row m-2-hor">
       <div className="col-md-4">
