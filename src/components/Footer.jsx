@@ -10,14 +10,14 @@ export default () => (
           <div className="heading">
             <h2>About Us</h2>
           </div>
-          <div className="content">
+          <div className="content font-600">
             <p>
               GREY.D’STUDIO is one of the fastest growing business entity in
               Bangladesh. The group invested in potential business sectors and
               shows incremental growth in a competitive market dynamic.
             </p>
           </div>
-          <div className="content">
+          <div className="content font-600">
             <p>
               GREY.D’STUDIO was born with a thirst to construct high quality
               building.
@@ -43,13 +43,13 @@ export default () => (
           <div className="content right flexo">
             <span
               onClick={() => window.open("tel:+8801989359890")}
-              className="link right"
+              className="link right font-600"
             >
               +880 19 8935 9890
             </span>
           </div>
           <div className="heading right">Office Address</div>
-          <div className="content right">
+          <div className="content right font-600">
             <p>
               House 44/i, Flat A1, Road 4, Block D <br />
               Bashundhara R/A, Dhaka 1229.
@@ -117,7 +117,9 @@ export default () => (
     <div className="subfooter">
       <div className="row m-2-hor">
         <div className="col-md-6">
-          <div className="content">© 14-2021 by GREY.D’STUDIO LTD.</div>
+          <div className="content font-600">
+            © 14-2021 by GREY.D’STUDIO LTD.
+          </div>
         </div>
       </div>
     </div>
