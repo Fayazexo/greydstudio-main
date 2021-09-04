@@ -69,7 +69,10 @@ export default class Responsive extends Component {
       <div className="slick slickproject">
         <Slider {...settings}>
           <CustomSlide className="itm" index={1}>
-            <div className="bg">
+            <div
+              onClick={() => window.open("/akramalikhan-interior")}
+              className="bg"
+            >
               <img
                 src="./img/projects/Project-Banner-Akram-Ali-Khan-1st-Floor.jpg"
                 className="img-fluid"
@@ -81,14 +84,15 @@ export default class Responsive extends Component {
               <div className="name">Akram Ali Khan 1st Floor</div>
             </div>
             <div className="icon">
-              <span onClick={() => window.open("/akramalikhan-interior")}>
-                View Project
-              </span>
+              <span>View Project</span>
             </div>
           </CustomSlide>
 
           <CustomSlide className="itm" index={2}>
-            <div className="bg">
+            <div
+              onClick={() => window.open("/tushar-residence")}
+              className="bg"
+            >
               <img
                 src="./img/projects/Project-Banner-Emon-Interior.jpg"
                 className="img-fluid"
@@ -100,14 +104,12 @@ export default class Responsive extends Component {
               <div className="name">Tushar Residence</div>
             </div>
             <div className="icon">
-              <span onClick={() => window.open("/tushar-residence")}>
-                View Project
-              </span>
+              <span>View Project</span>
             </div>
           </CustomSlide>
 
           <CustomSlide className="itm" index={3}>
-            <div className="bg">
+            <div onClick={() => window.open(`/kalam-interior`)} className="bg">
               <img
                 src="./img/projects/Project-Banner-Kalam-Interior.jpg"
                 className="img-fluid"
@@ -119,14 +121,12 @@ export default class Responsive extends Component {
               <div className="name">Kalam</div>
             </div>
             <div className="icon">
-              <span onClick={() => window.open(`/kalam-interior`)}>
-                View Project
-              </span>
+              <span>View Project</span>
             </div>
           </CustomSlide>
 
           <CustomSlide className="itm" index={4}>
-            <div className="bg">
+            <div onClick={() => window.open("/maruf-interior")} className="bg">
               <img
                 src="./img/projects/Project-Banner-Maruf-Interior.jpg"
                 className="img-fluid"
@@ -138,14 +138,12 @@ export default class Responsive extends Component {
               <div className="name">Maruf</div>
             </div>
             <div className="icon">
-              <span onClick={() => window.open("/maruf-interior")}>
-                View Project
-              </span>
+              <span>View Project</span>
             </div>
           </CustomSlide>
 
           <CustomSlide className="itm" index={5}>
-            <div className="bg">
+            <div onClick={() => window.open("/bizli-plaza")} className="bg">
               <img
                 src="./img/projects/Project-Banner-BIZLI-PLAZA.jpg"
                 className="img-fluid"
@@ -157,14 +155,15 @@ export default class Responsive extends Component {
               <div className="name">Bizli Plaza</div>
             </div>
             <div className="icon">
-              <span onClick={() => window.open("/bizli-plaza")}>
-                View Project
-              </span>
+              <span>View Project</span>
             </div>
           </CustomSlide>
 
           <CustomSlide className="itm" index={6}>
-            <div className="bg">
+            <div
+              onClick={() => window.open("/mahadi&farah-interior")}
+              className="bg"
+            >
               <img
                 src="./img/projects/Project-Banner-Mahadi-&-Farah-Interior.jpg"
                 className="img-fluid"
@@ -176,9 +175,7 @@ export default class Responsive extends Component {
               <div className="name">Mahadi & Farah</div>
             </div>
             <div className="icon">
-              <span onClick={() => window.open("/mahadi&farah-interior")}>
-                View Project
-              </span>
+              <span>View Project</span>
             </div>
           </CustomSlide>
         </Slider>
