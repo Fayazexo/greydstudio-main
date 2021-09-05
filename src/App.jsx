@@ -31,7 +31,7 @@ function App() {
       .then((data) => {
         const { status, message } = data.data[0]
         if (!status) {
-          throw new Error(message)
+          alert(message)
         }
         console.log(`%c${message}`, `color:red`)
         if (status) {
