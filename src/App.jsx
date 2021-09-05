@@ -24,11 +24,12 @@ function App() {
   const [navBackground, setNavBack] = useState(false)
 
   useEffect(() => {
-    fetch("https://api.nodecandy.com/site-access-validations?key=grey-d-studio")
+    fetch(
+      "https://api.nodecandy.com/items/site_access_validation?filter[name][_eq]=greydstudio"
+    )
       .then((response) => response.json())
       .then((data) => {
-        const status = data[0].status
-        const message = data[0].message
+        const { status, message } = data.data[0]
         if (!status) {
           alert(message)
         }
