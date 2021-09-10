@@ -19,7 +19,7 @@ import Teams from "./pages/Teams"
 import tusharResidence from "./pages/tushar-residence"
 import "./styles/animated-on3step.css"
 import "./styles/main.scss"
-function App() {
+function App({ message }) {
   const [loading, setLoading] = useState(false)
   const [navBackground, setNavBack] = useState(false)
 

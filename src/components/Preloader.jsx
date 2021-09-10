@@ -1,6 +1,6 @@
 import React from "react"
 
-const Preloader = (message) => {
+const Preloader = () => {
   return (
     <section id="preloader">
       <div className="text">
