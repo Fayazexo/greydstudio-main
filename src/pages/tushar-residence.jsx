@@ -2,6 +2,7 @@ import React, { Component, createRef, Fragment } from "react"
 import Reveal from "react-reveal/Reveal"
 import { withRouter } from "react-router"
 import Footer from "../components/Footer"
+import Gallery from "../components/Gallery"
 import {
   BackArrow,
   BackButton,
@@ -12,11 +13,37 @@ import {
   Title,
 } from "../styles/Case.styles"
 import { Efectr, Efectr1, Efectr2 } from "../styles/effect.styles"
-
 export const ScrollTop = ({ children, location }) => {
   React.useEffect(() => window.scrollTo(0, 0), [location])
   return children
 }
+
+const Images = [
+  {
+    src: "./img/projects/Tushar/Tushar-1.jpg",
+    alt: "Tushar Residence Interior",
+  },
+  {
+    src: "./img/projects/Tushar/Tushar-2.jpg",
+    alt: "Tushar Residence Interior",
+  },
+  {
+    src: "./img/projects/Tushar/Tushar-3.jpg",
+    alt: "Tushar Residence Interior",
+  },
+  {
+    src: "./img/projects/Tushar/Tushar-4.jpg",
+    alt: "Tushar Residence Interior",
+  },
+  {
+    src: "./img/projects/Tushar/Tushar-5.jpg",
+    alt: "Tushar Residence Interior",
+  },
+  {
+    src: "./img/projects/Tushar/Tushar-6.jpg",
+    alt: "Tushar Residence Interior",
+  },
+]
 
 class Case extends Component {
   constructor(props) {
@@ -93,7 +120,7 @@ class Case extends Component {
                   </p>
                 </div>
                 <div className="col-md-4 sticky">
-                  <ul className="detailprojec pb-4">
+                  <ul className="detailproject pb-4">
                     <li>
                       <span className="tile">Categories:</span>
                       <span>Exteriors</span>
@@ -112,87 +139,35 @@ class Case extends Component {
                     </li>
                   </ul>
                 </div>
-                <div className="col-md-6 p-md-0">
-                  <div className="single-img pimg-5">
-                    <img
-                      src="./img/projects/Tushar/Tushar-1.jpg"
-                      className="img-fluid"
-                      alt="Imageteam"
-                    />
-                  </div>
-                </div>
-                <div className="col-md-6 p-md-0">
-                  <div className="single-img pimg-5">
-                    <img
-                      src="./img/projects/Tushar/Tushar-2.jpg"
-                      className="img-fluid"
-                      alt="Imageteam"
-                    />
-                  </div>
-                </div>
-                <div className="col-md-6 p-md-0">
-                  <div className="single-img pimg-5">
-                    <img
-                      src="./img/projects/Tushar/Tushar-3.jpg"
-                      className="img-fluid"
-                      alt="Imageteam"
-                    />
-                  </div>
-                </div>
-                <div className="col-md-6 p-md-0">
-                  <div className="single-img pimg-5">
-                    <img
-                      src="./img/projects/Tushar/Tushar-4.jpg"
-                      className="img-fluid"
-                      alt="Imageteam"
-                    />
-                  </div>
-                </div>
-                <div className="col-md-6 p-md-0">
-                  <div className="single-img pimg-5">
-                    <img
-                      src="./img/projects/Tushar/Tushar-5.jpg"
-                      className="img-fluid"
-                      alt="Imageteam"
-                    />
-                  </div>
-                </div>
-                <div className="col-md-6 p-md-0">
-                  <div className="single-img pimg-5">
-                    <img
-                      src="./img/projects/Tushar/Tushar-6.jpg"
-                      className="img-fluid"
-                      alt="Imageteam"
-                    />
-                  </div>
-                </div>
-
-                <div className="col-md-12">
-                  <div className="tags">
-                    <span className="heading">Tags :</span>
-                    <span className="content">Inspiration</span>
-                    <span className="content">Decoation</span>
-                    <span className="content">Interior</span>
-                    <span className="content">Minimal</span>
-                  </div>
-                </div>
-                <div className="col-md-12">
-                  <div className="share">
-                    <span className="heading">Share :</span>
-                    <span className="content">
-                      <i
-                        onClick={() =>
-                          window.open(
-                            "https://www.facebook.com/share.php?u=https://www.greydstudio.net/tushar-residence"
-                          )
-                        }
-                        className="fa fa-facebook-f"
-                      ></i>
-                    </span>
-                  </div>
-                </div>
               </div>
             </section>
+
+            <Gallery Images={Images} />
+
+            <div className="col-md-12">
+              <div className="tags">
+                <span className="heading">Tags :</span>
+                <span className="content">Inspiration</span>
+                <span className="content">Decoation</span>
+                <span className="content">Interior</span>
+                <span className="content">Minimal</span>
+              </div>
+            </div>
+            <div className="col-md-12">
+              <div className="share">
+                <span className="heading">Share :</span>
+                <span className="content">
+                  <i
+                    onClick={() =>
+                      window.open(
+                        "https://www.facebook.com/share.php?u=https://www.greydstudio.net/tushar-residence"
+                      )
+                    }
+                    className="fa fa-facebook-f"
+                  ></i>
+                </span>
+              </div>
+            </div>
           </CaseWrapper>
         </ScrollTop>
 

@@ -9077,7 +9077,7 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.5.10, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -9283,7 +9283,7 @@ react-dev-utils@^10.2.1:
     strip-ansi "6.0.0"
     text-table "0.2.0"
 
-react-dom@^16.13.1:
+react-dom@^16.13.1, react-dom@^16.3.2:
   version "16.14.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.14.0.tgz#7ad838ec29a777fb3c75c3a190f661cf92ab8b89"
   integrity sha512-1gCeQXDLoIqMgqD3IO2Ah9bnf0w9kzhwN5q4FGnHZ67hBm9yePzB5JJAIQCc8x3pFnNlwFq4RidZggNAAkzWWw==
@@ -9430,7 +9430,24 @@ react-slick@^0.27.11:
     lodash.debounce "^4.0.8"
     resize-observer-polyfill "^1.5.0"
 
-react@^16.13.1:
+react-viewer@^3.2.2:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/react-viewer/-/react-viewer-3.2.2.tgz#38626a7fa862ec84dfa373c2ef5843f4100c465b"
+  integrity sha512-DHOq1x6cXsAViY43204ILRzLVR5ovP1MgzsC+LzZCWlInRuHjzAgpQZ8GzWm1CkiNYuHGwCxH36X0JUHl2xDSg==
+  dependencies:
+    classnames "^2.2.5"
+
+react-viewerjs@^0.1.9:
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/react-viewerjs/-/react-viewerjs-0.1.9.tgz#71079f5a9f11e3e58f5171df3f19804a8ab46a93"
+  integrity sha1-cQefWp8R4+WPUXHfPxmASoq0apM=
+  dependencies:
+    prop-types "^15.5.8"
+    react "^16.3.2"
+    react-dom "^16.3.2"
+    viewerjs "^1.0.0-rc.1"
+
+react@^16.13.1, react@^16.3.2:
   version "16.14.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.14.0.tgz#94d776ddd0aaa37da3eda8fc5b6b18a4c9a3114d"
   integrity sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==
@@ -11305,6 +11322,16 @@ verror@1.10.0:
     assert-plus "^1.0.0"
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
+
+viewerjs-react@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/viewerjs-react/-/viewerjs-react-1.0.2.tgz#7db477b0b0142c38e0a6131a3b673e4b9e777ad9"
+  integrity sha512-RrgINgmIfMyW+4rue9DwJsaq3mc7Ajg5tbE75dSRCqJ15lf+ofo12+g+3DqYwb2jBgbM9pmZ2uPz1LNUpgZkng==
+
+viewerjs@^1.0.0-rc.1:
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/viewerjs/-/viewerjs-1.10.1.tgz#07499ed043d0a29e3002b90f55c5b228bd1a742c"
+  integrity sha512-Oyzd3JP9dDSd+bBulfnQ+UTfHoobFwkmcT/uKSnQXjmPz7rZU0HJIiKudxPaMsiv17dr4Sm1cHnASJcDlFw1PA==
 
 vm-browserify@^1.0.1:
   version "1.1.2"

@@ -713,6 +713,10 @@ section {
   justify-content: space-around;
   padding: 10px 10px 25px 10px;
 }
+.flexxxxx {
+  display: flex;
+  justify-content: center;
+}
 .btn {
   color: $color;
 }
@@ -1374,7 +1378,6 @@ footer {
   }
 }
 .single-img {
-  display: inline-block;
   width: 100%;
   height: auto;
   overflow: hidden;
