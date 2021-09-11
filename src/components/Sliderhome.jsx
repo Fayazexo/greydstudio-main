@@ -1,6 +1,6 @@
 import React from "react"
 import Slider from "react-animated-slider"
-import "react-animated-slider/build/vertical.css"
+import "react-animated-slider/build/horizontal.css"
 
 const content = [
   {
@@ -34,7 +34,7 @@ const content = [
 ]
 
 export default () => (
-  <Slider className="slider-wrapper" autoplay={6000}>
+  <Slider className="slider-wrapper" autoplay={300}>
     {content.map((item, index) => (
       <div
         key={index}

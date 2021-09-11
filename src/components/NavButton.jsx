@@ -42,7 +42,7 @@ const BaseCircle = styled.div`
   flex-direction: column;
   align-items: flex-end;
   transition: all 0.3s ease-in-out;
-  @media screen and (min-width: 1344px) {
+  @media screen and (min-width: 860px) {
     display: none;
     transition: all 0.3s ease-in-out;
   }

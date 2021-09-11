@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+import ReactGa from "react-ga"
 import { BrowserRouter as Router, Route } from "react-router-dom"
 import NavigationMenu from "./components/Nav"
 import Preloader from "./components/Preloader"
@@ -19,6 +20,7 @@ import Teams from "./pages/Teams"
 import tusharResidence from "./pages/tushar-residence"
 import "./styles/animated-on3step.css"
 import "./styles/main.scss"
+
 function App({ message }) {
   const [loading, setLoading] = useState(false)
   const [navBackground, setNavBack] = useState(false)
@@ -41,6 +43,11 @@ function App({ message }) {
         }
       })
   }, [loading])
+
+  useEffect(() => {
+    ReactGa.initialize("G-LN45WH3Q5Q")
+    ReactGa.pageview(window.location.pathname + window.location.search)
+  }, [])
 
   return (
     <Router>
